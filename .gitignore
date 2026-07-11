@@ -1,0 +1,10 @@
+# Cloudflare Wrangler cache
+.wrangler/
+assets/.wrangler/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+styles.backup.css
