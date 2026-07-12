@@ -6,7 +6,6 @@
     <title>EnergyX 369 — Enterprise AI ERP Software</title>
     <meta name="description" content="Otomatisasi operasional perusahaan Anda tanpa vendor lock-in. Kendali penuh atas data, diotaki oleh AI yang menyederhanakan alur kerja terkompleks sekalipun.">
     
-    <!-- OpenGraph SEO -->
     <meta property="og:title" content="EnergyX 369 — Enterprise AI ERP">
     <meta property="og:description" content="ERP Berbasis AI tanpa vendor lock-in untuk industri Indonesia.">
     <meta property="og:type" content="website">
@@ -17,32 +16,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- SVG Sprite untuk optimasi performa DOM -->
     <svg style="display: none;">
         <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"></polyline>
         </symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </symbol>
     </svg>
 
-    <!-- HEADER / Glassmorphism -->
     <header class="header">
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
                 <img src="assets/logo.webp" alt="EnergyX 369 - Enterprise AI ERP Software" class="logo-img" width="36" height="36" loading="eager">
-                <!-- Teks 369 menggunakan warna Kuning Emas dari logo -->
                 <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#architect">Arsitektur</a></li>
                 <li><a href="#modules">Modul Core</a></li>
-                <li><a href="#contact">Investasi</a></li>
+                <li><a href="#pricing">Investasi</a></li>
                 <li><a href="#contact" class="btn btn-primary nav-cta">Jadwalkan Demo</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- HERO SECTION — Premium Dark Navy -->
         <section class="hero dark-section" id="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -53,7 +51,6 @@
                     <h1 class="hero-title">
                         Enterprise ERP.<br>
                         Automated by AI.<br>
-                        <!-- Penekanan menggunakan Kuning Emas, bukan merah -->
                         <span class="accent-highlight">Owned by You.</span>
                     </h1>
                     <p class="hero-desc">
@@ -61,11 +58,10 @@
                     </p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary btn-lg">Jadwalkan Demo</a>
-                        <a href="#modules" class="btn btn-outline-light btn-lg">Eksplorasi Arsitektur</a>
+                        <a href="#architect" class="btn btn-outline-light btn-lg">Eksplorasi Arsitektur</a>
                     </div>
                 </div>
                 
-                <!-- Hero Visual: System Execution Log -->
                 <div class="hero-visual">
                     <div class="workflow-card">
                         <div class="wf-header">
@@ -95,27 +91,67 @@
             </div>
         </section>
 
-        <!-- TRUST BAR — Tech Stack -->
-        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan" id="architect">
-            <div class="container">
-                <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
-                <div class="trust-logos">
-                    <span class="tech-badge">Frappe Framework</span>
-                    <span class="tech-badge">NVIDIA H200 Infra</span>
-                    <span class="tech-badge">Local Qwen LLM</span>
-                    <span class="tech-badge">n8n Workflow Automation</span>
-                    <span class="tech-badge">ITIL & PRINCE2 Aligned</span>
-                </div>
-            </div>
-        </aside>
-
-        <!-- MODULES — Asymmetric Bento Grid -->
-        <section class="modules section-padding" id="modules">
+        <section class="architecture section-padding" id="architect">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">ARSITEKTUR MODULAR TERINTEGRASI</span>
+                    <span class="section-eyebrow">TOPOLOGI SISTEM</span>
+                    <h2>Microservices Berbasis Agentic AI</h2>
+                    <p>Infrastruktur EnergyX 369 memisahkan modul inti dengan lapisan kecerdasan buatan. Kami memanfaatkan <em>workflow automation tool</em> untuk mengorkestrasi logika bisnis secara aman tanpa mengekspos database langsung ke AI.</p>
+                </div>
+
+                <div class="arch-diagram">
+                    <div class="arch-layer arch-ui">
+                        <h4>User Interface / Endpoint</h4>
+                        <p>Web Portal, Mobile Dashboard, API Gateway</p>
+                    </div>
+                    
+                    <div class="arch-arrow">↓</div>
+                    
+                    <div class="arch-layer arch-orchestrator">
+                        <h4>Workflow Automation (n8n Engine)</h4>
+                        <p>Bertindak sebagai konduktor lalu lintas data. Menerima permintaan pengguna, memicu modul spesifik, dan memanggil AI untuk analitik atau penalaran lanjutan.</p>
+                    </div>
+                    
+                    <div class="arch-split">
+                        <div class="arch-layer arch-microservices">
+                            <span class="arch-badge">Core Operations</span>
+                            <h4>Frappe Microservices</h4>
+                            <ul>
+                                <li>ERP & Finance Core</li>
+                                <li>Supply Chain (SCM)</li>
+                                <li>HRMS & Payroll</li>
+                                <li>CRM & Sales</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="arch-layer arch-ai">
+                            <span class="arch-badge highlight">Intelligence</span>
+                            <h4>Agentic AI Engine</h4>
+                            <ul>
+                                <li>Local Qwen LLM Cluster</li>
+                                <li>RAG (Retrieval-Augmented Gen)</li>
+                                <li>Predictive Analytics</li>
+                                <li>Data Structuring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-arrow">↓</div>
+                    
+                    <div class="arch-layer arch-db">
+                        <h4>Enterprise Database Cluster</h4>
+                        <p>Single Source of Truth (High Availability Relational Database)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modules section-padding" id="modules" style="background-color: var(--color-surface);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">MODUL INTI (CORE)</span>
                     <h2>Sistem Syaraf Pusat Perusahaan</h2>
-                    <p>Komponen operasional yang saling berkomunikasi secara mulus dalam satu sumber kebenaran data (<em>Single Source of Truth</em>). Tanpa silo, tanpa latensi sinkronisasi.</p>
+                    <p>Komponen operasional yang saling berkomunikasi secara mulus dalam satu sumber kebenaran data. Tanpa silo, tanpa latensi sinkronisasi.</p>
                 </div>
                 
                 <div class="bento-grid-4">
@@ -124,23 +160,22 @@
                             <span class="module-tag">Core & Finance</span>
                             <h3>Enterprise Resource Planning (ERP)</h3>
                             <p>Sentralisasi seluruh denyut nadi finansial perusahaan. Terintegrasi langsung dengan standar akuntansi multi-entitas, manajemen aset siklus penuh, dan rekonsiliasi bank otomatis. Sistem secara cerdas mengonsolidasi buku besar (<em>General Ledger</em>) dan memberikan visibilitas arus kas (<em>cash flow</em>) detik ini juga, mengeliminasi proses tutup buku akhir bulan yang lambat dan rawan <em>human error</em>.</p>
-                            <a href="#contact" class="bento-link" style="color: var(--color-brand-yellow);">Konsultasi Migrasi Data &rarr;</a>
                         </div>
                     </div>
                     
-                    <div class="bento-card span-4">
+                    <div class="bento-card span-4" style="background-color: #FFFFFF;">
                         <div class="bento-content">
                             <span class="module-tag" style="color: var(--color-brand-blue);">Logistics</span>
                             <h3>Supply Chain & Inventory (SCM)</h3>
-                            <p>Orkestrasi rantai pasok ujung-ke-ujung tanpa <em>blind spot</em>. Sistem proaktif memicu <em>Purchase Order</em> otomatis ke vendor saat stok menyentuh batas kritis (<em>Reorder Point</em>). Lacak perpindahan barang multi-gudang, manajemen <em>batch/expiry</em>, dan valuasi FIFO/Moving Average secara presisi melalui integrasi <em>barcode</em>.</p>
+                            <p>Orkestrasi rantai pasok ujung-ke-ujung tanpa <em>blind spot</em>. Sistem proaktif memicu <em>Purchase Order</em> otomatis ke vendor saat stok menyentuh batas kritis (<em>Reorder Point</em>). Lacak perpindahan barang multi-gudang, manajemen <em>batch/expiry</em>, dan valuasi FIFO/Moving Average secara presisi.</p>
                         </div>
                     </div>
                     
-                    <div class="bento-card span-4">
+                    <div class="bento-card span-4" style="background-color: #FFFFFF;">
                         <div class="bento-content">
-                            <span class="module-tag" style="color: var(--color-brand-blue);">Sales</span>
-                            <h3>Customer Relationship Management (CRM)</h3>
-                            <p>Akselerasi siklus penjualan dari prospek hingga pelunasan <em>invoice</em>. Otomatisasi perhitungan komisi bertingkat, konversi <em>pipeline</em> penjualan, dan pembuatan <em>Quotation</em> dinamis lintas departemen tanpa hambatan birokrasi. Pantau SLA respons tim <em>sales</em> dalam satu dasbor.</p>
+                            <span class="module-tag" style="color: var(--color-brand-red);">Sales</span>
+                            <h3>Customer Relationship Management</h3>
+                            <p>Akselerasi siklus penjualan dari prospek hingga pelunasan <em>invoice</em>. Otomatisasi perhitungan komisi bertingkat, konversi <em>pipeline</em> penjualan, dan pembuatan <em>Quotation</em> dinamis lintas departemen tanpa hambatan birokrasi.</p>
                         </div>
                     </div>
                     
@@ -148,16 +183,106 @@
                         <div class="bento-content">
                             <span class="module-tag" style="color: #10B981;">Human Capital</span>
                             <h3>HRMS & Localized Payroll</h3>
-                            <p>Manajemen modal manusia yang 100% patuh pada kompleksitas regulasi tenaga kerja Indonesia. Menangani perhitungan dinamis PPh 21 (TER), BPJS Kesehatan, dan Jamsostek secara otomatis. Dilengkapi portal <em>Employee Self-Service</em> (ESS) untuk pengajuan cuti, klaim <em>reimbursement</em>, dan absensi anti-manipulasi berbasis titik koordinat geolokasi (GPS) harian.</p>
-                            <a href="#contact" class="bento-link">Eksplorasi Fitur HRMS &rarr;</a>
+                            <p>Manajemen modal manusia yang 100% patuh pada kompleksitas regulasi tenaga kerja Indonesia. Menangani perhitungan dinamis PPh 21 (TER), BPJS Kesehatan, dan Jamsostek secara otomatis. Dilengkapi portal <em>Employee Self-Service</em> (ESS) untuk pengajuan cuti, klaim <em>reimbursement</em>, dan absensi anti-manipulasi berbasis geolokasi (GPS).</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- LEAD GENERATION / CONTACT -->
-        <section class="contact-section section-padding" id="contact">
+        <section class="pricing section-padding" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">SKEMA INVESTASI SAAS</span>
+                    <h2>Skalabilitas Tanpa Biaya Tersembunyi</h2>
+                    <p>Pilih arsitektur yang sesuai dengan ukuran operasional Anda. Tanpa batasan <em>user lisence</em> bulanan yang mencekik arus kas perusahaan.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <p>Bagi UMKM yang bertransformasi digital.</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">3<span class="price-suffix">Jt</span></span>
+                            <span class="price-period">/ bulan<br>(Ditagih Rp 30 Jt / tahun)</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 2 Pilihan Modul</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> 10.000 / bulan</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> 1 Sesi Online</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> 2 Jam Gratis</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Starter</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Business</h3>
+                            <p>Sistem terpadu untuk operasional menengah.</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">6<span class="price-suffix">Jt</span></span>
+                            <span class="price-period">/ bulan<br>(Ditagih Rp 60 Jt / tahun)</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 3 Pilihan Modul</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> 50.000 / bulan</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> 3 Sesi Online</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> 5 Jam Gratis</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Business</a>
+                    </div>
+
+                    <div class="pricing-card best-seller">
+                        <div class="pricing-badge"><svg width="14" height="14"><use href="#icon-star"></use></svg> Best Seller</div>
+                        <div class="pricing-header">
+                            <h3>Corporate</h3>
+                            <p>Ekosistem AI-ERP skala penuh bagi perusahaan berkembang.</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">9<span class="price-suffix">Jt</span></span>
+                            <span class="price-period">/ bulan<br>(Ditagih Rp 90 Jt / tahun)</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Akses Semua Modul</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> 200.000 / bulan</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> 5 Sesi (Online/Offline)</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> 10 Jam Gratis</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> SLA Prioritas 8 Jam</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-full">Pilih Corporate</a>
+                    </div>
+
+                    <div class="pricing-card enterprise-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <p>Arsitektur Private Cloud tanpa batas (On-Premise Ready).</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">900<span class="price-suffix">Jt</span></span>
+                            <span class="price-period">One-Time Charge (OTC)<br>+ Opsional 20% Annual Maint.</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Full Customization Code</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> Local Private LLM (Unlimited)</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> Dedicated Onboarding Team</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> Unlimited Konsultasi Arsitektur</li>
+                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Kepatuhan ITIL & Tingkat Keamanan Finansial</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Hubungi Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="contact" style="background-color: var(--color-surface);">
             <div class="container contact-wrapper">
                 <div class="contact-info">
                     <span class="section-eyebrow">TRANSFORMASI DIMULAI DI SINI</span>
@@ -188,12 +313,14 @@
                                 <input type="text" id="jobRole" required placeholder="Cth: CTO, Direktur Operasional">
                             </div>
                             <div class="form-group">
-                                <label for="companySize">Skala Perusahaan</label>
-                                <select id="companySize" required>
-                                    <option value="" disabled selected>Pilih Skala</option>
-                                    <option value="11 - 50 Karyawan">11 - 50 Karyawan</option>
-                                    <option value="51 - 200 Karyawan">51 - 200 Karyawan</option>
-                                    <option value="200+ Karyawan">200+ Karyawan</option>
+                                <label for="selectedPlan">Paket Minat</label>
+                                <select id="selectedPlan" required>
+                                    <option value="" disabled selected>Pilih Rencana</option>
+                                    <option value="Starter (3 Jt/bln)">Starter (3 Jt/bln)</option>
+                                    <option value="Business (6 Jt/bln)">Business (6 Jt/bln)</option>
+                                    <option value="Corporate (9 Jt/bln)">Corporate (9 Jt/bln)</option>
+                                    <option value="Enterprise (OTC)">Enterprise (OTC)</option>
+                                    <option value="Hanya Konsultasi Dulu">Belum Tahu, Konsultasi Dulu</option>
                                 </select>
                             </div>
                         </div>
@@ -208,7 +335,6 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer dark-section">
         <div class="container">
             <div class="footer-bottom">
@@ -220,7 +346,6 @@
         </div>
     </footer>
 
-    <!-- Form to WhatsApp Script Engine -->
     <script>
         document.getElementById('waForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -228,10 +353,10 @@
             const fullName = document.getElementById('fullName').value.trim();
             const workEmail = document.getElementById('workEmail').value.trim();
             const jobRole = document.getElementById('jobRole').value.trim();
-            const companySize = document.getElementById('companySize').value;
+            const selectedPlan = document.getElementById('selectedPlan').value;
             const message = document.getElementById('message').value.trim();
 
-            const waTemplate = `Halo tim EnergyX 369, saya tertarik untuk berkonsultasi mengenai kebutuhan ERP/AI perusahaan kami.\n\n*Detail Kontak:*\n👤 Nama: ${fullName}\n📧 Email: ${workEmail}\n💼 Jabatan: ${jobRole}\n🏢 Skala Perusahaan: ${companySize}\n\n*Tantangan Operasional Saat Ini:*\n"${message}"\n\nMohon informasi terkait langkah selanjutnya. Terima kasih.`;
+            const waTemplate = `Halo tim EnergyX 369, saya tertarik untuk berkonsultasi mengenai kebutuhan ERP/AI perusahaan kami.\n\n*Detail Kontak:*\n👤 Nama: ${fullName}\n📧 Email: ${workEmail}\n💼 Jabatan: ${jobRole}\n🎯 Paket Diminati: ${selectedPlan}\n\n*Tantangan Operasional Saat Ini:*\n"${message}"\n\nMohon informasi terkait langkah selanjutnya. Terima kasih.`;
 
             const encodedMessage = encodeURIComponent(waTemplate);
             const waURL = `https://wa.me/6285285586496?text=${encodedMessage}`;
