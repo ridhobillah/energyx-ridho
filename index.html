@@ -1,100 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnergyX 369 — AI-Driven ERP</title>
-    <meta name="description" content="Enterprise ERP with integrated AI. No vendor lock-in, full data ownership, and industry-ready workflows.">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>EnergyX 369 — Enterprise AI ERP Software</title>
+    <meta name="description" content="Otomatisasi operasional perusahaan Anda tanpa vendor lock-in. Kendali penuh atas data, diotaki oleh AI yang menyederhanakan alur kerja terkompleks sekalipun.">
+    
+    <meta property="og:title" content="EnergyX 369 — Enterprise AI ERP">
+    <meta property="og:description" content="ERP Berbasis AI tanpa vendor lock-in untuk industri Indonesia.">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <svg style="display: none;">
+        <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </symbol>
+    </svg>
+
     <header class="header">
-        <nav class="nav">
-            <div class="nav-logo">
-                <img src="assets/logo.webp" alt="EnergyX Logo" class="logo-img">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
+                <img src="assets/logo.webp" alt="EnergyX 369 - Enterprise AI ERP Software" class="logo-img" width="36" height="36" loading="eager">
                 <span class="logo-text">EnergyX <span class="logo-sub">369</span></span>
-            </div>
+            </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#trust">Why EnergyX</a></li>
-                <li><a href="#modules">Modules</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://energyx.co.id" class="nav-cta" target="_blank">Dashboard</a></li>
+                <li><a href="#architect">Arsitektur</a></li>
+                <li><a href="#modules">Modul Core</a></li>
+                <li><a href="#pricing">Investasi</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-cta">Jadwalkan Demo</a></li>
             </ul>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </nav>
     </header>
 
     <main>
-        <!-- HERO — Split Screen -->
-        <section class="hero" id="hero">
-            <div class="hero-container">
-                <div class="hero-left">
+        <section class="hero dark-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">SLA Uptime 99.9%</span>
+                    </div>
                     <h1 class="hero-title">
-                        AI-Driven ERP<br>
-                        <span class="accent">Without Vendor Lock-in</span>
+                        Enterprise ERP.<br>
+                        Automated by AI.<br>
+                        <span class="accent-red">Owned by You.</span>
                     </h1>
                     <p class="hero-desc">
-                        Enterprise resource planning with integrated AI capabilities.
-                        Full data ownership, modular scaling, and industry-ready workflows — all under your control.
+                        Otomatisasi operasional perusahaan Anda tanpa <em>vendor lock-in</em>. Arsitektur <em>open-source</em> yang diotaki oleh ekosistem AI mandiri untuk mengeksekusi alur kerja terkompleks. Dirancang khusus untuk skala industri.
                     </p>
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">Request a Demo</a>
-                        <a href="#modules" class="btn btn-ghost">Explore Modules</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">Active Workflows</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-number">~1,500</span>
-                            <span class="stat-label">AI Queries/mo</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat">
-                            <span class="stat-number">99.9%</span>
-                            <span class="stat-label">Uptime SLA</span>
-                        </div>
+                        <a href="#contact" class="btn btn-primary btn-lg">Jadwalkan Demo</a>
+                        <a href="#architect" class="btn btn-outline-light btn-lg">Eksplorasi Arsitektur</a>
                     </div>
                 </div>
-                <div class="hero-right">
-                    <div class="hero-visual">
-                        <div class="ai-mockup">
-                            <div class="mockup-header">
-                                <div class="mockup-dots">
-                                    <span></span><span></span><span></span>
-                                </div>
-                                <span>AI Assistant</span>
+                
+                <div class="hero-visual">
+                    <div class="workflow-card">
+                        <div class="wf-header">
+                            <span class="wf-dot red"></span><span class="wf-dot yellow"></span><span class="wf-dot green"></span>
+                            <span class="wf-title">System Execution Log</span>
+                        </div>
+                        <div class="wf-body">
+                            <div class="wf-step">
+                                <span class="wf-time">08:00:12</span>
+                                <span class="wf-action highlight">Triggered:</span> Supply Chain Reorder Protocol
                             </div>
-                            <div class="mockup-body">
-                                <div class="chat-bubble ai">
-                                    <span class="chat-label">AI</span>
-                                    <p>Here's the monthly sales summary for PT. EnergyX 369.</p>
-                                </div>
-                                <div class="mockup-chart">
-                                    <div class="chart-bar" style="height: 40%;"></div>
-                                    <div class="chart-bar" style="height: 65%;"></div>
-                                    <div class="chart-bar" style="height: 50%;"></div>
-                                    <div class="chart-bar active" style="height: 80%;"></div>
-                                    <div class="chart-bar" style="height: 55%;"></div>
-                                    <div class="chart-bar" style="height: 70%;"></div>
-                                </div>
-                                <div class="chart-label">Sales Analysis — July 2026</div>
-                                <div class="chat-bubble user">
-                                    <span class="chat-label">You</span>
-                                    <p>Show me Q2 vs Q3 comparison</p>
-                                </div>
+                            <div class="wf-step indent">
+                                <span class="wf-time">08:00:14</span>
+                                <span class="wf-action">Analyzing:</span> Q3 Demand Forecast via Local LLM...
+                            </div>
+                            <div class="wf-step indent">
+                                <span class="wf-time">08:00:18</span>
+                                <span class="wf-action success">Approved:</span> Restock 5,000 units authorized.
+                            </div>
+                            <div class="wf-step">
+                                <span class="wf-time">08:00:21</span>
+                                <span class="wf-action highlight">Executing:</span> Generating PO in ERP Core...
                             </div>
                         </div>
                     </div>
@@ -102,354 +88,142 @@
             </div>
         </section>
 
-        <!-- TRUST & COMPLIANCE -->
-        <section class="trust" id="trust">
+        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan">
             <div class="container">
-                <div class="trust-header">
-                    <span class="trust-eyebrow">TRUST & COMPLIANCE</span>
-                    <h2>Built for Enterprise Standards</h2>
-                    <p>Compliant with international IT governance and quality management frameworks.</p>
-                </div>
-                <div class="trust-clients">
-                    <p class="trust-clients-label">Trusted by industry leaders across Indonesia</p>
-                    <div class="client-logos">
-                        <span class="client-placeholder">Client Logo 1</span>
-                        <span class="client-placeholder">Client Logo 2</span>
-                        <span class="client-placeholder">Client Logo 3</span>
-                        <span class="client-placeholder">Client Logo 4</span>
-                        <span class="client-placeholder">Client Logo 5</span>
-                    </div>
+                <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
+                <div class="trust-logos">
+                    <span class="tech-badge">Frappe Framework</span>
+                    <span class="tech-badge">NVIDIA H200 Infra</span>
+                    <span class="tech-badge">Qwen Models</span>
+                    <span class="tech-badge">n8n Workflow Automation</span>
+                    <span class="tech-badge">ITIL & PRINCE2 Aligned</span>
                 </div>
             </div>
-        </section>
+        </aside>
 
-        <!-- CORE ERP MODULES — 2x2 Grid -->
-        <section class="modules" id="modules">
+        <section class="modules section-padding" id="modules">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">CORE CAPABILITIES</span>
-                    <h2>Enterprise ERP Modules</h2>
-                    <p>Modular, composable, and designed to scale with your business — not the other way around.</p>
+                    <span class="section-eyebrow">ARSITEKTUR MODULAR</span>
+                    <h2>Satu Platform, Multi-Solusi</h2>
+                    <p>Komponen yang saling terhubung secara mulus. Kembangkan sistem seiring pertumbuhan bisnis Anda, tanpa batasan lisensi per-user yang mencekik.</p>
                 </div>
-                <div class="module-grid">
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
+                
+                <div class="bento-grid">
+                    <div class="bento-card bento-large">
+                        <div class="bento-content">
+                            <h3>Enterprise Resource Planning (ERP)</h3>
+                            <p>Dashboard terpadu untuk manufaktur, inventaris, dan keuangan. Visibilitas data seketika dengan analitik prediktif.</p>
+                            <a href="#contact" class="bento-link">Pelajari lebih lanjut &rarr;</a>
                         </div>
-                        <h3>Enterprise Resource Planning</h3>
-                        <p>Unified dashboard for finance, inventory, manufacturing, and HR — all in one intelligent system.</p>
-                        <span class="module-tag">Frappe ERP</span>
                     </div>
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z"></path>
-                                <path d="M12 6v6l4 2"></path>
-                            </svg>
+                    
+                    <div class="bento-card bento-medium dark-card">
+                        <div class="bento-content">
+                            <h3>AI-Powered Analytics</h3>
+                            <p>Dapatkan laporan kompleks hanya dengan mengetik perintah menggunakan bahasa natural. <em>Zero learning curve.</em></p>
                         </div>
-                        <h3>AI-Powered Analytics</h3>
-                        <p>Natural language queries, predictive forecasting, and automated report generation powered by LLM models.</p>
-                        <span class="module-tag">AI Assistant</span>
                     </div>
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
+                    
+                    <div class="bento-card bento-medium">
+                        <div class="bento-content">
+                            <h3>Workflow Automation</h3>
+                            <p>Otomatisasi persetujuan berlapis dan sinkronisasi data antar departemen tanpa intervensi manual.</p>
                         </div>
-                        <h3>Human Resource Management</h3>
-                        <p>End-to-end HR: recruitment, attendance, payroll, performance reviews, and employee self-service portals.</p>
-                        <span class="module-tag">HRMS</span>
                     </div>
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                            </svg>
-                        </div>
-                        <h3>Supply Chain & Inventory</h3>
-                        <p>Real-time stock tracking, demand forecasting, vendor management, and automated reorder points.</p>
-                        <span class="module-tag">SCM</span>
+                    
+                    <div class="bento-card bento-small">
+                        <h3>HRMS & Payroll</h3>
+                        <p>Manajemen talenta ujung-ke-ujung.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PRICING — Tabbed -->
-        <section class="pricing" id="pricing">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-eyebrow">PRICING</span>
-                    <h2>Transparent Plans, No Hidden Costs</h2>
-                    <p>Choose the plan that matches your team size and complexity. All plans include core ERP.</p>
+        <section class="contact-section section-padding" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-eyebrow">TRANSFORMASI DIMULAI DI SINI</span>
+                    <h2>Konsultasikan Kebutuhan Arsitektur Anda</h2>
+                    <p>Tim ahli kami siap membedah tantangan operasional Anda dan merancang purwarupa sistem tanpa komitmen awal.</p>
+                    <ul class="contact-benefits">
+                        <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Audit infrastruktur TI gratis</li>
+                        <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Estimasi TCO (Total Cost of Ownership)</li>
+                        <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Pemetaan alur kerja automasi</li>
+                    </ul>
                 </div>
-
-                <div class="pricing-tabs">
-                    <button class="tab-btn active" data-tab="sme">SME Plans</button>
-                    <button class="tab-btn" data-tab="enterprise">Corporate & Enterprise</button>
-                </div>
-
-                <!-- Tab 1: SME Plans -->
-                <div class="tab-content active" id="tab-sme">
-                    <div class="pricing-grid">
-                        <div class="pricing-card">
-                            <div class="pricing-header">
-                                <h3>Starter</h3>
-                                <p class="pricing-desc">For small teams getting started</p>
-                            </div>
-                            <div class="pricing-price">
-                                <span class="price-currency">IDR</span>
-                                <span class="price-amount">3</span>
-                                <span class="price-period">Jt / month</span>
-                            </div>
-                            <ul class="pricing-features">
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Up to <strong>5 active users</strong></li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Core ERP modules included</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><strong>~500</strong> AI queries / month</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Community support</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Standard hosting</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
-                        </div>
-
-                        <div class="pricing-card featured">
-                            <div class="pricing-popular">Most Popular</div>
-                            <div class="pricing-header">
-                                <h3>Professional</h3>
-                                <p class="pricing-desc">For growing businesses</p>
-                            </div>
-                            <div class="pricing-price">
-                                <span class="price-currency">IDR</span>
-                                <span class="price-amount">6</span>
-                                <span class="price-period">Jt / month</span>
-                            </div>
-                            <ul class="pricing-features">
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Up to <strong>20 active users</strong></li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>All core modules + advanced</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><strong>~1,500</strong> AI queries / month</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Premium AI workflows</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Priority support (8h SLA)</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated hosting</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
-                        </div>
-
-                        <div class="pricing-card">
-                            <div class="pricing-header">
-                                <h3>Business</h3>
-                                <p class="pricing-desc">For established enterprises</p>
-                            </div>
-                            <div class="pricing-price">
-                                <span class="price-currency">IDR</span>
-                                <span class="price-amount">9</span>
-                                <span class="price-period">Jt / month</span>
-                            </div>
-                            <ul class="pricing-features">
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Up to <strong>50 active users</strong></li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>All modules + custom development</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><strong>~5,000</strong> AI queries / month</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Advanced analytics suite</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated account manager</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>24/7 premium support</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>SLA-backed uptime 99.9%</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-outline btn-full">Contact Sales</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab 2: Enterprise -->
-                <div class="tab-content" id="tab-enterprise">
-                    <div class="enterprise-content">
-                        <div class="enterprise-card">
-                            <div class="enterprise-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                </svg>
-                            </div>
-                            <h3>Corporate</h3>
-                            <p>Tailored ERP deployment for mid-to-large organizations with complex multi-entity structures.</p>
-                            <ul class="enterprise-features">
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><strong>Unlimited users</strong> across entities</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Multi-company consolidation</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><strong>~20,000</strong> AI queries / month</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Custom module development</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated infrastructure</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>On-premise or private cloud option</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated engineering team</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-primary">Request Proposal</a>
-                        </div>
-                        <div class="enterprise-card">
-                            <div class="enterprise-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                    <path d="M2 17l10 5 10-5"></path>
-                                    <path d="M2 12l10 5 10-5"></path>
-                                </svg>
-                            </div>
-                            <h3>Enterprise</h3>
-                            <p>Full-scale digital transformation with white-glove service, custom integrations, and guaranteed SLAs.</p>
-                            <ul class="enterprise-features">
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><strong>Unlimited</strong> everything</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>White-glove onboarding</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Custom AI model training</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Enterprise integrations (SAP, Oracle, etc.)</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>99.99% uptime guarantee</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>24/7 dedicated support team</li>
-                                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Quarterly business reviews</li>
-                            </ul>
-                            <a href="#contact" class="btn btn-primary">Contact Sales</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-left">
-                        <span class="section-eyebrow">GET IN TOUCH</span>
-                        <h2>Ready to Transform<br>Your Business?</h2>
-                        <p>Talk to our team about how EnergyX 369 can streamline your operations with AI-powered ERP.</p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                                <span>info@energyx.co.id</span>
-                            </div>
-                            <div class="contact-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                </svg>
-                                <span>+62 21 XXXX XXXX</span>
-                            </div>
-                            <div class="contact-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                <span>Jakarta, Indonesia</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form class="contact-form" action="https://formsubmit.co/info@energyx.co.id" method="POST">
+                
+                <div class="contact-form-card">
+                    <form id="waForm" class="enterprise-form">
+                        <div class="form-row">
                             <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name" required>
+                                <label for="fullName">Nama Lengkap</label>
+                                <input type="text" id="fullName" required placeholder="Cth: Budi Santoso">
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" placeholder="Business Email" required>
+                                <label for="workEmail">Email Perusahaan</label>
+                                <input type="email" id="workEmail" required placeholder="budi@perusahaan.co.id">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jobRole">Jabatan / Peran</label>
+                                <input type="text" id="jobRole" required placeholder="Cth: CTO, Direktur Operasional">
                             </div>
                             <div class="form-group">
-                                <select name="company_size" required>
-                                    <option value="" disabled selected>Company Size</option>
-                                    <option value="1-10">1–10 employees</option>
-                                    <option value="11-50">11–50 employees</option>
-                                    <option value="51-200">51–200 employees</option>
-                                    <option value="200+">200+ employees</option>
+                                <label for="companySize">Skala Perusahaan</label>
+                                <select id="companySize" required>
+                                    <option value="" disabled selected>Pilih Skala</option>
+                                    <option value="11 - 50 Karyawan">11 - 50 Karyawan</option>
+                                    <option value="51 - 200 Karyawan">51 - 200 Karyawan</option>
+                                    <option value="200+ Karyawan">200+ Karyawan</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Tell us about your needs..." rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tantangan Operasional Utama</label>
+                            <textarea id="message" rows="4" required placeholder="Jelaskan secara singkat kendala sistem saat ini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">Kirim via WhatsApp</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER — Fixed -->
-    <footer class="footer">
+    <footer class="footer dark-section">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="assets/logo.webp" alt="EnergyX Logo" class="footer-logo-img">
-                        <span>EnergyX 369</span>
-                    </div>
-                    <p>AI-Powered ERP for Indonesian Industry.<br>Built on Frappe Framework.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#modules">Modules</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#trust">Trust & Compliance</a></li>
-                        <li><a href="https://energyx.co.id" target="_blank">Dashboard</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="https://energyx.co.id/about" target="_blank">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://energyx.co.id/careers" target="_blank">Careers</a></li>
-                        <li><a href="https://energyx.co.id/blog" target="_blank">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="https://energyx.co.id/privacy" target="_blank">Privacy Policy</a></li>
-                        <li><a href="https://energyx.co.id/terms" target="_blank">Terms of Service</a></li>
-                        <li><a href="https://energyx.co.id/security" target="_blank">Security</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 PT. EnergyX 369 Indonesia. All rights reserved.</p>
+                <div class="footer-brand">
+                    <span class="logo-text" style="color: white;">EnergyX <span style="color: var(--color-cta);">369</span></span>
+                    <p>&copy; 2026 Hak Cipta Dilindungi. Sistem dirancang untuk keandalan tingkat tinggi.</p>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile nav toggle
-        const mobileToggle = document.getElementById('mobileToggle');
-        const navLinks = document.getElementById('navLinks');
-        mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileToggle.classList.toggle('active');
-        });
+        document.getElementById('waForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah reload halaman
+            
+            // Mengambil nilai dari input form
+            const fullName = document.getElementById('fullName').value.trim();
+            const workEmail = document.getElementById('workEmail').value.trim();
+            const jobRole = document.getElementById('jobRole').value.trim();
+            const companySize = document.getElementById('companySize').value;
+            const message = document.getElementById('message').value.trim();
 
-        // Pricing tabs
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                btn.classList.add('active');
-                const tab = btn.dataset.tab;
-                document.getElementById('tab-' + tab).classList.add('active');
-            });
-        });
+            // Membangun template pesan WhatsApp menggunakan formatting bintang (*) untuk Bold
+            const waTemplate = `Halo tim EnergyX 369, saya tertarik untuk berkonsultasi mengenai kebutuhan ERP/AI perusahaan kami.\n\n*Detail Kontak:*\n👤 Nama: ${fullName}\n📧 Email: ${workEmail}\n💼 Jabatan: ${jobRole}\n🏢 Skala Perusahaan: ${companySize}\n\n*Tantangan Operasional Saat Ini:*\n"${message}"\n\nMohon informasi terkait langkah selanjutnya. Terima kasih.`;
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    navLinks.classList.remove('active');
-                    mobileToggle.classList.remove('active');
-                }
-            });
+            // Encoding URL agar karakter spasi dan enter aman terbaca oleh browser/WhatsApp
+            const encodedMessage = encodeURIComponent(waTemplate);
+            
+            // URL Target
+            const waURL = `https://wa.me/6285285586496?text=${encodedMessage}`;
+            
+            // Redirect ke WhatsApp (Membuka tab/aplikasi baru)
+            window.open(waURL, '_blank');
         });
     </script>
 </body>
