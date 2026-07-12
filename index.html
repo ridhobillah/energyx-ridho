@@ -6,6 +6,7 @@
     <title>EnergyX 369 — Enterprise AI ERP Software</title>
     <meta name="description" content="Otomatisasi operasional perusahaan Anda tanpa vendor lock-in. Kendali penuh atas data, diotaki oleh AI yang menyederhanakan alur kerja terkompleks sekalipun.">
     
+    <!-- OpenGraph SEO -->
     <meta property="og:title" content="EnergyX 369 — Enterprise AI ERP">
     <meta property="og:description" content="ERP Berbasis AI tanpa vendor lock-in untuk industri Indonesia.">
     <meta property="og:type" content="website">
@@ -16,17 +17,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- SVG Sprite untuk optimasi performa DOM -->
     <svg style="display: none;">
         <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"></polyline>
         </symbol>
     </svg>
 
+    <!-- HEADER / Glassmorphism -->
     <header class="header">
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
                 <img src="assets/logo.webp" alt="EnergyX 369 - Enterprise AI ERP Software" class="logo-img" width="36" height="36" loading="eager">
-                <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-red);">369</span></span>
+                <!-- Teks 369 menggunakan warna Kuning Emas dari logo -->
+                <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#architect">Arsitektur</a></li>
@@ -38,6 +42,7 @@
     </header>
 
     <main>
+        <!-- HERO SECTION — Premium Dark Navy -->
         <section class="hero dark-section" id="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -48,7 +53,8 @@
                     <h1 class="hero-title">
                         Enterprise ERP.<br>
                         Automated by AI.<br>
-                        <span class="accent-red">Owned by You.</span>
+                        <!-- Penekanan menggunakan Kuning Emas, bukan merah -->
+                        <span class="accent-highlight">Owned by You.</span>
                     </h1>
                     <p class="hero-desc">
                         Otomatisasi operasional perusahaan Anda tanpa <em>vendor lock-in</em>. Arsitektur <em>open-source</em> yang diotaki oleh ekosistem AI mandiri untuk mengeksekusi alur kerja terkompleks. Dirancang khusus untuk skala industri.
@@ -59,6 +65,7 @@
                     </div>
                 </div>
                 
+                <!-- Hero Visual: System Execution Log -->
                 <div class="hero-visual">
                     <div class="workflow-card">
                         <div class="wf-header">
@@ -88,6 +95,7 @@
             </div>
         </section>
 
+        <!-- TRUST BAR — Tech Stack -->
         <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan" id="architect">
             <div class="container">
                 <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
@@ -101,6 +109,7 @@
             </div>
         </aside>
 
+        <!-- MODULES — Asymmetric Bento Grid -->
         <section class="modules section-padding" id="modules">
             <div class="container">
                 <div class="section-header">
@@ -129,7 +138,7 @@
                     
                     <div class="bento-card span-4">
                         <div class="bento-content">
-                            <span class="module-tag" style="color: var(--color-brand-red);">Sales</span>
+                            <span class="module-tag" style="color: var(--color-brand-blue);">Sales</span>
                             <h3>Customer Relationship Management (CRM)</h3>
                             <p>Akselerasi siklus penjualan dari prospek hingga pelunasan <em>invoice</em>. Otomatisasi perhitungan komisi bertingkat, konversi <em>pipeline</em> penjualan, dan pembuatan <em>Quotation</em> dinamis lintas departemen tanpa hambatan birokrasi. Pantau SLA respons tim <em>sales</em> dalam satu dasbor.</p>
                         </div>
@@ -147,6 +156,7 @@
             </div>
         </section>
 
+        <!-- LEAD GENERATION / CONTACT -->
         <section class="contact-section section-padding" id="contact">
             <div class="container contact-wrapper">
                 <div class="contact-info">
@@ -198,17 +208,19 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer dark-section">
         <div class="container">
             <div class="footer-bottom">
                 <div class="footer-brand">
-                    <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span style="color: var(--color-brand-red);">369</span></span>
+                    <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span style="color: var(--color-brand-yellow);">369</span></span>
                     <p>&copy; 2026 Hak Cipta Dilindungi. Sistem dirancang untuk keandalan tingkat tinggi.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Form to WhatsApp Script Engine -->
     <script>
         document.getElementById('waForm').addEventListener('submit', function(e) {
             e.preventDefault();
