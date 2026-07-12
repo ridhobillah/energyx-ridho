@@ -32,8 +32,8 @@
                 <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#architect">Arsitektur</a></li>
                 <li><a href="#modules">Modul Core</a></li>
+                <li><a href="#architect">Arsitektur</a></li>
                 <li><a href="#pricing">Investasi</a></li>
                 <li><a href="#contact" class="btn btn-primary nav-cta">Jadwalkan Demo</a></li>
             </ul>
@@ -58,7 +58,7 @@
                     </p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary btn-lg">Jadwalkan Demo</a>
-                        <a href="#architect" class="btn btn-outline-light btn-lg">Eksplorasi Arsitektur</a>
+                        <a href="#modules" class="btn btn-outline-light btn-lg">Eksplorasi Modul</a>
                     </div>
                 </div>
                 
@@ -91,60 +91,18 @@
             </div>
         </section>
 
-        <section class="architecture section-padding" id="architect">
+        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-eyebrow">TOPOLOGI SISTEM</span>
-                    <h2>Microservices Berbasis Agentic AI</h2>
-                    <p>Infrastruktur EnergyX 369 memisahkan modul inti dengan lapisan kecerdasan buatan. Kami memanfaatkan <em>workflow automation tool</em> untuk mengorkestrasi logika bisnis secara aman tanpa mengekspos database langsung ke AI.</p>
-                </div>
-
-                <div class="arch-diagram">
-                    <div class="arch-layer arch-ui">
-                        <h4>User Interface / Endpoint</h4>
-                        <p>Web Portal, Mobile Dashboard, API Gateway</p>
-                    </div>
-                    
-                    <div class="arch-arrow">↓</div>
-                    
-                    <div class="arch-layer arch-orchestrator">
-                        <h4>Workflow Automation (n8n Engine)</h4>
-                        <p>Bertindak sebagai konduktor lalu lintas data. Menerima permintaan pengguna, memicu modul spesifik, dan memanggil AI untuk analitik atau penalaran lanjutan.</p>
-                    </div>
-                    
-                    <div class="arch-split">
-                        <div class="arch-layer arch-microservices">
-                            <span class="arch-badge">Core Operations</span>
-                            <h4>Frappe Microservices</h4>
-                            <ul>
-                                <li>ERP & Finance Core</li>
-                                <li>Supply Chain (SCM)</li>
-                                <li>HRMS & Payroll</li>
-                                <li>CRM & Sales</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="arch-layer arch-ai">
-                            <span class="arch-badge highlight">Intelligence</span>
-                            <h4>Agentic AI Engine</h4>
-                            <ul>
-                                <li>Local Qwen LLM Cluster</li>
-                                <li>RAG (Retrieval-Augmented Gen)</li>
-                                <li>Predictive Analytics</li>
-                                <li>Data Structuring</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="arch-arrow">↓</div>
-                    
-                    <div class="arch-layer arch-db">
-                        <h4>Enterprise Database Cluster</h4>
-                        <p>Single Source of Truth (High Availability Relational Database)</p>
-                    </div>
+                <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
+                <div class="trust-logos">
+                    <span class="tech-badge">Frappe Framework</span>
+                    <span class="tech-badge">NVIDIA H200 Infra</span>
+                    <span class="tech-badge">Local Qwen LLM</span>
+                    <span class="tech-badge">n8n Workflow Automation</span>
+                    <span class="tech-badge">ITIL & PRINCE2 Aligned</span>
                 </div>
             </div>
-        </section>
+        </aside>
 
         <section class="modules section-padding" id="modules" style="background-color: var(--color-surface);">
             <div class="container">
@@ -190,7 +148,38 @@
             </div>
         </section>
 
-        <section class="pricing section-padding" id="pricing">
+        <section class="architecture section-padding" id="architect">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">TOPOLOGI SISTEM</span>
+                    <h2>Kecerdasan Skala Enterprise</h2>
+                    <p>Infrastruktur kami memisahkan modul pencatatan dengan otak AI. Dirancang khusus agar AI dapat mengotomatisasi pekerjaan Anda tanpa mengekspos data internal ke pihak luar.</p>
+                </div>
+
+                <div class="arch-simple-diagram">
+                    <div class="arch-card arch-c1">
+                        <h4>1. Akses Pengguna (Web & Mobile)</h4>
+                        <p>Titik interaksi karyawan. Menyajikan dasbor operasional secara <em>real-time</em> dari segala perangkat secara aman.</p>
+                    </div>
+                    
+                    <div class="arch-arrow-down">↓</div>
+                    
+                    <div class="arch-card arch-c2">
+                        <h4>2. Otak Sistem (AI & Workflow Automation)</h4>
+                        <p>Menggunakan mesin AI (Qwen LLM) dan n8n untuk memahami bahasa manusia, mengambil keputusan logis, dan mengotomatisasi persetujuan antar departemen.</p>
+                    </div>
+                    
+                    <div class="arch-arrow-down">↓</div>
+                    
+                    <div class="arch-card arch-c3">
+                        <h4>3. Mesin Operasional (ERP Microservices & Database)</h4>
+                        <p>Dibangun di atas Frappe Framework. Inti dari sistem (HRMS, Keuangan, Inventaris) yang memproses, mengeksekusi, dan menyimpan data secara paten (<em>Single Source of Truth</em>).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing section-padding" id="pricing" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">SKEMA INVESTASI SAAS</span>
@@ -282,7 +271,7 @@
             </div>
         </section>
 
-        <section class="contact-section section-padding" id="contact" style="background-color: var(--color-surface);">
+        <section class="contact-section section-padding" id="contact">
             <div class="container contact-wrapper">
                 <div class="contact-info">
                     <span class="section-eyebrow">TRANSFORMASI DIMULAI DI SINI</span>
