@@ -24,10 +24,10 @@
     --color-text: #1F2937;          
     --color-text-muted: #4B5563;
     
-    /* Functional Tokens */
+    /* Functional Tokens - CTA Diubah ke Biru Korporat */
     --color-accent: var(--color-brand-blue);
-    --color-cta: var(--color-brand-red);
-    --color-cta-hover: #9E1E24;     
+    --color-cta: var(--color-brand-blue);
+    --color-cta-hover: #1C3A6B; /* Biru korporat yang lebih gelap saat hover */
     --color-highlight: var(--color-brand-yellow);
     
     --color-border: #E5E7EB;
@@ -70,7 +70,7 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 800; line-height: 1.
     color: var(--color-accent);
     margin-bottom: 1rem;
 }
-.accent-red { color: var(--color-cta); }
+.accent-highlight { color: var(--color-highlight); }
 
 /* BUTTONS */
 .btn {
@@ -84,12 +84,12 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 800; line-height: 1.
 .btn-primary {
     background-color: var(--color-cta);
     color: #FFF;
-    box-shadow: 0 4px 14px 0 rgba(193, 39, 45, 0.39);
+    box-shadow: 0 4px 14px 0 rgba(40, 82, 150, 0.39); /* Biru shadow */
 }
 .btn-primary:hover {
     background-color: var(--color-cta-hover);
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(193, 39, 45, 0.23);
+    box-shadow: 0 6px 20px rgba(40, 82, 150, 0.25);
 }
 .btn-outline-light {
     background-color: transparent;
@@ -267,7 +267,7 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 800; line-height: 1.
     color: var(--color-text);
 }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-    outline: none; border-color: var(--color-cta); box-shadow: 0 0 0 3px rgba(193, 39, 45, 0.1);
+    outline: none; border-color: var(--color-cta); box-shadow: 0 0 0 3px rgba(40, 82, 150, 0.1);
 }
 
 /* FOOTER */
