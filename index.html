@@ -26,12 +26,12 @@
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
                 <img src="assets/logo.webp" alt="EnergyX 369 - Enterprise AI ERP Software" class="logo-img" width="36" height="36" loading="eager">
-                <span class="logo-text">EnergyX <span class="logo-sub">369</span></span>
+                <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-red);">369</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#architect">Arsitektur</a></li>
                 <li><a href="#modules">Modul Core</a></li>
-                <li><a href="#pricing">Investasi</a></li>
+                <li><a href="#contact">Investasi</a></li>
                 <li><a href="#contact" class="btn btn-primary nav-cta">Jadwalkan Demo</a></li>
             </ul>
         </nav>
@@ -55,7 +55,7 @@
                     </p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary btn-lg">Jadwalkan Demo</a>
-                        <a href="#architect" class="btn btn-outline-light btn-lg">Eksplorasi Arsitektur</a>
+                        <a href="#modules" class="btn btn-outline-light btn-lg">Eksplorasi Arsitektur</a>
                     </div>
                 </div>
                 
@@ -72,7 +72,7 @@
                             </div>
                             <div class="wf-step indent">
                                 <span class="wf-time">08:00:14</span>
-                                <span class="wf-action">Analyzing:</span> Q3 Demand Forecast via Local LLM...
+                                <span class="wf-action">Analyzing:</span> Q3 Demand Forecast via Local Qwen LLM...
                             </div>
                             <div class="wf-step indent">
                                 <span class="wf-time">08:00:18</span>
@@ -88,13 +88,13 @@
             </div>
         </section>
 
-        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan">
+        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan" id="architect">
             <div class="container">
                 <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
                 <div class="trust-logos">
                     <span class="tech-badge">Frappe Framework</span>
                     <span class="tech-badge">NVIDIA H200 Infra</span>
-                    <span class="tech-badge">Qwen Models</span>
+                    <span class="tech-badge">Local Qwen LLM</span>
                     <span class="tech-badge">n8n Workflow Automation</span>
                     <span class="tech-badge">ITIL & PRINCE2 Aligned</span>
                 </div>
@@ -104,37 +104,44 @@
         <section class="modules section-padding" id="modules">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">ARSITEKTUR MODULAR</span>
-                    <h2>Satu Platform, Multi-Solusi</h2>
-                    <p>Komponen yang saling terhubung secara mulus. Kembangkan sistem seiring pertumbuhan bisnis Anda, tanpa batasan lisensi per-user yang mencekik.</p>
+                    <span class="section-eyebrow">ARSITEKTUR MODULAR TERINTEGRASI</span>
+                    <h2>Sistem Syaraf Pusat Perusahaan</h2>
+                    <p>Komponen operasional yang saling berkomunikasi secara mulus dalam satu sumber kebenaran data (<em>Single Source of Truth</em>). Tanpa silo, tanpa latensi sinkronisasi.</p>
                 </div>
                 
-                <div class="bento-grid">
-                    <div class="bento-card bento-large">
+                <div class="bento-grid-4">
+                    <div class="bento-card span-8 dark-card" style="background: linear-gradient(135deg, var(--color-dark), var(--color-dark-surface));">
                         <div class="bento-content">
+                            <span class="module-tag">Core & Finance</span>
                             <h3>Enterprise Resource Planning (ERP)</h3>
-                            <p>Dashboard terpadu untuk manufaktur, inventaris, dan keuangan. Visibilitas data seketika dengan analitik prediktif.</p>
-                            <a href="#contact" class="bento-link">Pelajari lebih lanjut &rarr;</a>
+                            <p>Sentralisasi seluruh denyut nadi finansial perusahaan. Terintegrasi langsung dengan standar akuntansi multi-entitas, manajemen aset siklus penuh, dan rekonsiliasi bank otomatis. Sistem secara cerdas mengonsolidasi buku besar (<em>General Ledger</em>) dan memberikan visibilitas arus kas (<em>cash flow</em>) detik ini juga, mengeliminasi proses tutup buku akhir bulan yang lambat dan rawan <em>human error</em>.</p>
+                            <a href="#contact" class="bento-link" style="color: var(--color-brand-yellow);">Konsultasi Migrasi Data &rarr;</a>
                         </div>
                     </div>
                     
-                    <div class="bento-card bento-medium dark-card">
+                    <div class="bento-card span-4">
                         <div class="bento-content">
-                            <h3>AI-Powered Analytics</h3>
-                            <p>Dapatkan laporan kompleks hanya dengan mengetik perintah menggunakan bahasa natural. <em>Zero learning curve.</em></p>
+                            <span class="module-tag" style="color: var(--color-brand-blue);">Logistics</span>
+                            <h3>Supply Chain & Inventory (SCM)</h3>
+                            <p>Orkestrasi rantai pasok ujung-ke-ujung tanpa <em>blind spot</em>. Sistem proaktif memicu <em>Purchase Order</em> otomatis ke vendor saat stok menyentuh batas kritis (<em>Reorder Point</em>). Lacak perpindahan barang multi-gudang, manajemen <em>batch/expiry</em>, dan valuasi FIFO/Moving Average secara presisi melalui integrasi <em>barcode</em>.</p>
                         </div>
                     </div>
                     
-                    <div class="bento-card bento-medium">
+                    <div class="bento-card span-4">
                         <div class="bento-content">
-                            <h3>Workflow Automation</h3>
-                            <p>Otomatisasi persetujuan berlapis dan sinkronisasi data antar departemen tanpa intervensi manual.</p>
+                            <span class="module-tag" style="color: var(--color-brand-red);">Sales</span>
+                            <h3>Customer Relationship Management (CRM)</h3>
+                            <p>Akselerasi siklus penjualan dari prospek hingga pelunasan <em>invoice</em>. Otomatisasi perhitungan komisi bertingkat, konversi <em>pipeline</em> penjualan, dan pembuatan <em>Quotation</em> dinamis lintas departemen tanpa hambatan birokrasi. Pantau SLA respons tim <em>sales</em> dalam satu dasbor.</p>
                         </div>
                     </div>
                     
-                    <div class="bento-card bento-small">
-                        <h3>HRMS & Payroll</h3>
-                        <p>Manajemen talenta ujung-ke-ujung.</p>
+                    <div class="bento-card span-8" style="background: linear-gradient(135deg, #FFFFFF, #F3F4F6);">
+                        <div class="bento-content">
+                            <span class="module-tag" style="color: #10B981;">Human Capital</span>
+                            <h3>HRMS & Localized Payroll</h3>
+                            <p>Manajemen modal manusia yang 100% patuh pada kompleksitas regulasi tenaga kerja Indonesia. Menangani perhitungan dinamis PPh 21 (TER), BPJS Kesehatan, dan Jamsostek secara otomatis. Dilengkapi portal <em>Employee Self-Service</em> (ESS) untuk pengajuan cuti, klaim <em>reimbursement</em>, dan absensi anti-manipulasi berbasis titik koordinat geolokasi (GPS) harian.</p>
+                            <a href="#contact" class="bento-link">Eksplorasi Fitur HRMS &rarr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,7 +202,7 @@
         <div class="container">
             <div class="footer-bottom">
                 <div class="footer-brand">
-                    <span class="logo-text" style="color: white;">EnergyX <span style="color: var(--color-cta);">369</span></span>
+                    <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span style="color: var(--color-brand-red);">369</span></span>
                     <p>&copy; 2026 Hak Cipta Dilindungi. Sistem dirancang untuk keandalan tingkat tinggi.</p>
                 </div>
             </div>
@@ -204,25 +211,19 @@
 
     <script>
         document.getElementById('waForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Mencegah reload halaman
+            e.preventDefault();
             
-            // Mengambil nilai dari input form
             const fullName = document.getElementById('fullName').value.trim();
             const workEmail = document.getElementById('workEmail').value.trim();
             const jobRole = document.getElementById('jobRole').value.trim();
             const companySize = document.getElementById('companySize').value;
             const message = document.getElementById('message').value.trim();
 
-            // Membangun template pesan WhatsApp menggunakan formatting bintang (*) untuk Bold
             const waTemplate = `Halo tim EnergyX 369, saya tertarik untuk berkonsultasi mengenai kebutuhan ERP/AI perusahaan kami.\n\n*Detail Kontak:*\n👤 Nama: ${fullName}\n📧 Email: ${workEmail}\n💼 Jabatan: ${jobRole}\n🏢 Skala Perusahaan: ${companySize}\n\n*Tantangan Operasional Saat Ini:*\n"${message}"\n\nMohon informasi terkait langkah selanjutnya. Terima kasih.`;
 
-            // Encoding URL agar karakter spasi dan enter aman terbaca oleh browser/WhatsApp
             const encodedMessage = encodeURIComponent(waTemplate);
-            
-            // URL Target
             const waURL = `https://wa.me/6285285586496?text=${encodedMessage}`;
             
-            // Redirect ke WhatsApp (Membuka tab/aplikasi baru)
             window.open(waURL, '_blank');
         });
     </script>
