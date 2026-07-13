@@ -106,7 +106,7 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 .uniform-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
 .uniform-card p { font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem; line-height: 1.6; flex-grow: 1; }
 
-/* PRICING TABS & TABLES (ENTERPRISE GRADE) */
+/* PRICING TABS & TABLES */
 .pricing-tabs { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; }
 .tab-btn { padding: 0.75rem 2rem; font-family: var(--font-heading); font-size: 0.9375rem; font-weight: 700; color: var(--color-text-muted); background: transparent; border: 2px solid var(--color-border); border-radius: 99px; cursor: pointer; transition: all 0.2s; }
 .tab-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
@@ -116,7 +116,6 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
 .table-responsive { width: 100%; overflow-x: auto; margin-bottom: 1.5rem; }
-/* Dihilangkan overflow: hidden untuk mencegah clipping sekecil apapun */
 .enterprise-table { width: 100%; border-collapse: collapse; background: var(--color-bg-card); border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); font-size: 0.875rem; min-width: 800px; }
 .enterprise-table th, .enterprise-table td { padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--color-border); border-right: 1px solid var(--color-border); }
 .enterprise-table th { background: var(--color-surface); color: var(--color-primary); font-family: var(--font-heading); vertical-align: bottom; }
@@ -126,9 +125,8 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 .enterprise-table thead th.highlight-col { border-top: 4px solid var(--color-brand-blue); }
 .enterprise-table tbody tr:last-child td.highlight-col { border-bottom: 2px solid var(--color-brand-blue); }
 
-/* PERBAIKAN BADGE AGAR TIDAK TERPOTONG */
 .plan-badge { display: inline-block; background: var(--color-brand-yellow); color: var(--color-primary); padding: 0.35rem 0.85rem; font-size: 0.75rem; border-radius: 99px; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 4px rgba(242, 169, 0, 0.3); }
-.plan-spacer { height: 32px; margin-bottom: 1rem; } /* Penyeimbang tinggi header tabel */
+.plan-spacer { height: 32px; margin-bottom: 1rem; }
 
 .plan-name { font-size: 1.125rem; font-weight: 800; margin-bottom: 0.5rem; }
 .plan-price { font-size: 1.5rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.25rem; }
@@ -149,13 +147,16 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 .enterprise-action { background: var(--color-dark-surface); border: 1px solid var(--color-dark-border); padding: 2rem; border-radius: 12px; text-align: center; min-width: 300px; }
 .enterprise-action .price-amount { font-size: 2.5rem; font-family: var(--font-heading); font-weight: 800; color: #FFF; display: block; margin: 0.5rem 0; }
 
-/* AI AGENTS GRID */
-.ai-agents-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+/* AI AGENTS GRID - Diperbarui menjadi 4 Kolom */
+.ai-agents-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 .agent-card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm); }
 .agent-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border); }
-.agent-avatar { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 800; color: #FFF; }
-.fin-avatar { background: var(--color-brand-blue); } .scm-avatar { background: var(--color-brand-yellow); } .hr-avatar { background: #10B981; }
-.agent-card h3 { font-size: 1.125rem; margin: 0; }
+.agent-avatar { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 800; color: #FFF; flex-shrink: 0; }
+.fin-avatar { background: var(--color-brand-blue); } 
+.scm-avatar { background: var(--color-brand-yellow); } 
+.rev-avatar { background: var(--color-brand-red); } 
+.hr-avatar { background: #10B981; }
+.agent-card h3 { font-size: 1.125rem; margin: 0; line-height: 1.3; }
 .agent-skills { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
 .agent-skills li { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.875rem; color: var(--color-text); }
 .agent-skills svg { color: var(--color-brand-blue); margin-top: 2px; flex-shrink: 0; }
@@ -181,6 +182,7 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
     .roi-flex { grid-template-columns: 1fr 1fr; display: grid; }
     .roi-divider { display: none; }
     .enterprise-card { flex-direction: column; gap: 1.5rem; }
+    .ai-agents-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-wrapper { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
