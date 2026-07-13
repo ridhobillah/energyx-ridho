@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=3.0">
+    <link rel="stylesheet" href="styles.css?v=3.1">
 </head>
 <body>
     <svg style="display: none;">
@@ -37,7 +37,8 @@
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#ai-employee">Agen AI</a></li>
-                <li><a href="#demo">Studi Kasus</a></li>
+                <!-- Diperbaiki: Sinkronisasi menu dengan isi section -->
+                <li><a href="#demo">Demo & Bukti</a></li>
                 <li><a href="#pricing">Investasi</a></li>
                 <li><a href="#contact" class="btn btn-primary nav-cta">Jadwalkan Asesmen</a></li>
             </ul>
@@ -45,7 +46,7 @@
     </header>
 
     <main>
-        <!-- HERO SECTION (Realistis & Elegan) -->
+        <!-- HERO SECTION -->
         <section class="hero dark-section" id="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -60,18 +61,17 @@
                         EnergyX 369 mengintegrasikan mesin ERP dengan Agen AI yang dapat merampingkan tugas repetitif—mulai dari ekstraksi data <em>invoice</em> hingga penyusunan draf pelaporan—secara aman dan terpantau.
                     </p>
                     
-                    <!-- EMOTIONAL HOOK (Elegan & Berbasis Nilai) -->
                     <div class="emotional-quote">
                         "Setiap jam yang dihabiskan untuk pekerjaan administratif adalah jam yang tidak digunakan untuk menciptakan nilai bagi pelanggan."
                     </div>
 
+                    <!-- Diperbaiki: CTA diselaraskan dengan ekspektasi landing page -->
                     <div class="hero-actions">
-                        <a href="#demo" class="btn btn-primary btn-lg">Lihat Cara Kerja RANI</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg">Hitung Potensi Penghematan</a>
+                        <a href="#demo" class="btn btn-primary btn-lg">Lihat Cara Kerja Sistem</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Jadwalkan Asesmen</a>
                     </div>
                 </div>
                 
-                <!-- AI Action Visual Hook -->
                 <div class="hero-visual">
                     <div class="workflow-card ai-focus-card">
                         <div class="wf-header">
@@ -88,8 +88,9 @@
                                 ⚠️ Ditemukan 3 anomali perbedaan nominal. Draf catatan koreksi telah disiapkan di sistem untuk Anda tinjau.
                             </div>
                             <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                                <!-- Diperbaiki: Ekspektasi tombol kembali realistis -->
                                 <button class="action-pill primary-pill" onclick="window.open('https://wa.me/6285285586496', '_blank')">Tinjau Anomali</button>
-                                <button class="action-pill" onclick="window.open('https://wa.me/6285285586496', '_blank')">Chat dengan RANI</button>
+                                <button class="action-pill" onclick="window.open('https://wa.me/6285285586496', '_blank')">Konsultasi via WA</button>
                             </div>
                         </div>
                     </div>
@@ -97,41 +98,42 @@
             </div>
         </section>
 
-        <!-- ROI METRICS BAR (Dilengkapi konteks "Hingga") -->
+        <!-- ROI METRICS BAR (Realistis & Dapat Dipertanggungjawabkan) -->
         <div class="roi-metrics-bar">
             <div class="container roi-flex">
                 <div class="roi-item">
-                    <span class="roi-number">Hingga 800</span>
-                    <span class="roi-label">Jam Kerja Dihemat / Bulan*</span>
+                    <span class="roi-number">±780 Jam</span>
+                    <span class="roi-label">Potensi Waktu Admin Dihemat/Bulan*</span>
                 </div>
                 <div class="roi-divider"></div>
                 <div class="roi-item">
-                    <span class="roi-number">2 Jam</span>
-                    <span class="roi-label">Waktu Tutup Buku (Dari Rata-rata 7 Hari)</span>
+                    <span class="roi-number">Lebih Ramping</span>
+                    <span class="roi-label">Otomatisasi Rekonsiliasi Tutup Buku</span>
                 </div>
                 <div class="roi-divider"></div>
                 <div class="roi-item">
                     <span class="roi-number">Hingga 98.5%</span>
-                    <span class="roi-label">Akurasi Ekstraksi Dokumen</span>
+                    <span class="roi-label">Akurasi Ekstraksi Dokumen Terstruktur</span>
                 </div>
                 <div class="roi-divider"></div>
                 <div class="roi-item">
                     <span class="roi-number">Hingga 20x</span>
-                    <span class="roi-label">Akselerasi Alur Persetujuan</span>
+                    <span class="roi-label">Akselerasi Persetujuan Invoice & PO</span>
                 </div>
             </div>
-            <div class="container" style="text-align: center; margin-top: 1rem; opacity: 0.6; font-size: 0.75rem; color: #FFF;">
-                *Angka metrik merupakan batas atas yang dicapai berdasarkan hasil studi kasus operasional klien manufaktur kami.
+            <!-- Diperbaiki: Disclaimer Enterprise Architecture yang kuat -->
+            <div class="container" style="text-align: center; margin-top: 1.5rem; opacity: 0.6; font-size: 0.75rem; color: #FFF; max-width: 900px;">
+                *Berdasarkan proyeksi studi kasus klien sektor distribusi FMCG (85 pengguna, 18.000 invoice/bulan). Hasil implementasi dapat berbeda tergantung kompleksitas proses bisnis, kualitas data <em>scan</em> dokumen, dan tingkat adopsi organisasi.
             </div>
         </div>
 
-        <!-- THE STORY, DEMO & PROOF SECTION (Menggantikan posisi Bootcamp) -->
+        <!-- THE STORY, DEMO & PROOF SECTION -->
         <section class="demo-section section-padding" id="demo" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header" style="max-width: 800px;">
-                    <span class="section-eyebrow">BUKTI IMPLEMENTASI NYATA</span>
-                    <h2>Lihat RANI Bekerja</h2>
-                    <p>Kami tidak sekadar menjual konsep. Platform kami secara aktif mengotomatisasi proses bisnis yang sebelumnya membebani tim Anda. Simak demonstrasi produk dan hasil implementasinya.</p>
+                    <span class="section-eyebrow">DEMO & BUKTI NYATA</span>
+                    <h2>Lihat Platform Bekerja</h2>
+                    <p>Kami tidak sekadar menjual konsep. Platform kami secara aktif mengotomatisasi proses bisnis yang sebelumnya membebani tim. Simak demonstrasi sistem dan hasil implementasinya di lapangan.</p>
                 </div>
 
                 <div class="demo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
@@ -142,33 +144,33 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/is93cRmo3DI" title="Demonstrasi AI EnergyX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div style="padding: 1.5rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 12px 12px;">
-                            <h3 style="font-size: 1.25rem; color: var(--color-primary); margin-bottom: 0.5rem;">Demo Operasional: RANI</h3>
-                            <p style="font-size: 0.9375rem; color: var(--color-text-muted);">Saksikan bagaimana Agen AI membaca konteks data bisnis dan menjalankan instruksi alur kerja di dalam dasbor.</p>
+                            <h3 style="font-size: 1.25rem; color: var(--color-primary); margin-bottom: 0.5rem;">Demo Operasional Sistem</h3>
+                            <p style="font-size: 0.9375rem; color: var(--color-text-muted);">Saksikan bagaimana Agen AI membaca konteks data bisnis dan menjalankan instruksi alur kerja di dalam dasbor ERP.</p>
                         </div>
                     </div>
 
-                    <!-- Case Study Placeholder -->
+                    <!-- Case Study Validasi -->
                     <div class="bootcamp-card" style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 12px; padding: 2.5rem; box-shadow: var(--shadow-md);">
-                        <span style="display: inline-block; padding: 0.25rem 0.75rem; background-color: var(--color-brand-blue); color: #FFF; font-size: 0.75rem; font-weight: 700; border-radius: 99px; margin-bottom: 1.5rem;">STUDI KASUS: MANUFAKTUR</span>
+                        <span style="display: inline-block; padding: 0.25rem 0.75rem; background-color: var(--color-brand-blue); color: #FFF; font-size: 0.75rem; font-weight: 700; border-radius: 99px; margin-bottom: 1.5rem;">STUDI KASUS: DISTRIBUSI FMCG</span>
                         <h3 style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 1rem;">Memangkas Latensi Persetujuan Dokumen hingga 80%</h3>
+                        <!-- Diperbaiki: Kalimat lebih kredibel dan membumi (Tanpa CTA palsu) -->
                         <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
-                            <strong>Tantangan:</strong> Sebuah perusahaan distribusi klien kami sebelumnya menghabiskan rata-rata 5 hari kerja hanya untuk mencocokkan data faktur masuk dengan pesanan pembelian (PO) secara manual.
+                            <strong>Tantangan:</strong> Klien sektor distribusi makanan (NDA) kami sebelumnya menghabiskan rata-rata 5 hari kerja hanya untuk mencocokkan data faktur masuk dengan pesanan pembelian (PO) secara manual karena tingginya volume transaksi harian.
                         </p>
-                        <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin-bottom: 2rem; line-height: 1.7;">
-                            <strong>Solusi EnergyX:</strong> Kami mengimplementasikan agen ekstraksi data. AI secara otomatis membaca dokumen masuk, memvalidasi nomor PO ke dalam sistem <em>database</em>, dan meneruskan dokumen yang valid kepada manajer terkait. Proses yang memakan waktu 5 hari kini selesai dalam kurang dari 20 menit per <em>batch</em> dokumen.
+                        <p style="font-size: 0.9375rem; color: var(--color-text-muted); margin-bottom: 0; line-height: 1.7;">
+                            <strong>Solusi EnergyX:</strong> Kami mengimplementasikan agen ekstraksi data terstruktur. AI secara otomatis membaca dokumen masuk, memvalidasi nomor PO ke dalam <em>database</em>, dan meneruskan dokumen yang valid kepada manajer terkait. Proses penyortiran data kini selesai dalam rata-rata 20 menit per <em>batch</em> dokumen.
                         </p>
-                        <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- MEET THE AI EMPLOYEE SECTION (Lebih Terukur dan Masuk Akal) -->
+        <!-- MEET THE AI EMPLOYEE SECTION -->
         <section class="ai-employee section-padding" id="ai-employee">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">AGEN SPESIALIS</span>
-                    <h2>Modul Agen Tersedia</h2>
+                    <h2>Katalog Agen AI Tersedia</h2>
                     <p>Sistem kami dapat difokuskan pada departemen tertentu yang paling membutuhkan otomatisasi, dengan tetap menggunakan fondasi data yang seragam.</p>
                 </div>
 
@@ -197,6 +199,7 @@
                         <ul class="agent-skills">
                             <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Notifikasi pintar ambang batas stok</li>
                             <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Menyusun draf dokumen Purchase Order</li>
+                            <!-- Diperbaiki: Menghindari kata Negosiasi Otomatis -->
                             <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Analisis perbandingan harga vendor</li>
                         </ul>
                     </div>
@@ -210,7 +213,7 @@
                         </div>
                         <ul class="agent-skills">
                             <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Otomatisasi rekapitulasi data lembur</li>
-                            <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Asisten <em>Chatbot</em> untuk FAQ karyawan</li>
+                            <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Asisten FAQ internal untuk karyawan</li>
                             <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Pemilahan awal (<em>Screening</em>) dokumen CV</li>
                         </ul>
                     </div>
@@ -218,39 +221,39 @@
             </div>
         </section>
 
-        <!-- ARCHITECTURE SECTION (n8n & Frappe Context Corrected) -->
+        <!-- ARCHITECTURE SECTION -->
         <section class="architecture section-padding" id="architect">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">ARSITEKTUR PLATFORM</span>
                     <h2>Infrastruktur Aman & Terukur</h2>
-                    <p>Kami merancang arsitektur di mana mesin inti (Frappe), <em>workflow automation</em> (n8n), dan model analitik AI bekerja berdampingan tanpa mengorbankan integritas dan tata kelola data perusahaan Anda.</p>
+                    <p>Kami merancang arsitektur di mana mesin inti, alat <em>workflow automation</em>, dan model analitik AI bekerja berdampingan tanpa mengorbankan integritas dan tata kelola data perusahaan Anda.</p>
                 </div>
 
                 <div class="arch-simple-diagram">
                     <div class="arch-card arch-c1">
                         <h4>1. Dasbor Pengguna (User Interface)</h4>
-                        <p>Akses terkontrol bagi karyawan Anda untuk meninjau data operasional dan memberikan persetujuan (<em>Human-in-the-loop</em>).</p>
+                        <p>Akses terkontrol bagi karyawan Anda untuk meninjau data operasional dan memberikan persetujuan akhir (<em>Human-in-the-loop</em>).</p>
                     </div>
                     
                     <div class="arch-arrow-down">↓</div>
                     
                     <div class="arch-card arch-c2">
                         <h4>2. Lapisan Orkestrasi & AI Reasoning</h4>
-                        <p>Sistem <em>workflow automation</em> (n8n) mengorkestrasi aliran data secara aman, sementara model AI lokal menganalisis instruksi berbasis teks dan memberikan rekomendasi logis.</p>
+                        <p>Sistem <em>workflow automation</em> (n8n) mengorkestrasi aliran data secara aman, sementara model AI menganalisis instruksi berbasis teks dan menyodorkan rekomendasi logis.</p>
                     </div>
                     
                     <div class="arch-arrow-down">↓</div>
                     
                     <div class="arch-card arch-c3">
                         <h4>3. Database & Mesin Eksekusi Inti</h4>
-                        <p>Dibangun di atas kerangka <em>open-source</em> tangguh. Menyimpan seluruh catatan keuangan, SDM, dan logistik Anda sebagai satu sumber kebenaran (<em>Single Source of Truth</em>).</p>
+                        <p>Dibangun di atas kerangka aplikasi teruji. Menyimpan seluruh catatan keuangan, SDM, dan logistik Anda sebagai satu sumber kebenaran (<em>Single Source of Truth</em>).</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PRICING SECTION (Diperjelas Kategorinya untuk CFO) -->
+        <!-- PRICING SECTION (Konsistensi Positioning AI Platform) -->
         <section class="pricing section-padding" id="pricing" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
@@ -264,24 +267,25 @@
                     <button class="tab-btn" data-target="tab-large">Lisensi Permanen (CAPEX)</button>
                 </div>
 
-                <!-- TAB CONTENT 1: CLOUD (SaaS) -->
                 <div class="tab-content active" id="tab-sme">
                     <div class="sme-grid">
+                        
                         <div class="pricing-card">
                             <div class="pricing-header">
                                 <h3>Starter</h3>
-                                <p>Skala perkenalan untuk satu departemen.</p>
+                                <p>Skala perkenalan untuk satu departemen operasional.</p>
                             </div>
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
                                 <span class="price-amount">3<span class="price-suffix">Jt</span></span>
                                 <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 36 Jt</del> <strong style="color: var(--color-primary);">Rp 30 Jt</strong> / tahun)</span>
                             </div>
+                            <!-- Diperbaiki: Terminologi konsisten menjual "Platform AI", bukan "Modul ERP" -->
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Platform:</strong> 1 Pilihan Modul</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kapasitas Analitik:</strong> Hingga 2.500 Dokumen / bln</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Pelatihan:</strong> 1 Sesi Orientasi @3 Jam</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Konsultasi:</strong> 3 Jam Pendampingan Sistem</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Platform Engine:</strong> 1 Pilihan Basis Modul</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Workforce:</strong> Akses 1 Agen Spesifik</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kapasitas:</strong> Hingga 2.500 Dokumen/bln</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Onboarding:</strong> 1 Sesi Orientasi @3 Jam</li>
                             </ul>
                             <a href="#contact" class="btn btn-outline-light pricing-btn">Jadwalkan Penjajakan</a>
                         </div>
@@ -289,7 +293,7 @@
                         <div class="pricing-card">
                             <div class="pricing-header">
                                 <h3>Business</h3>
-                                <p>Ekspansi adopsi ke lintas fungsional.</p>
+                                <p>Ekspansi adopsi agen AI ke tingkat lintas fungsional.</p>
                             </div>
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
@@ -297,10 +301,10 @@
                                 <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 72 Jt</del> <strong style="color: var(--color-primary);">Rp 60 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Platform:</strong> 2 Pilihan Modul</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kapasitas Analitik:</strong> Hingga 10.000 Dokumen / bln</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Pelatihan:</strong> 2 Sesi Orientasi @3 Jam</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Konsultasi:</strong> 6 Jam Pendampingan Sistem</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Platform Engine:</strong> 2 Basis Modul Terintegrasi</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Workforce:</strong> Akses 2 Agen Eksekusi</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kapasitas:</strong> Hingga 10.000 Dokumen/bln</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Onboarding:</strong> 2 Sesi Orientasi @3 Jam</li>
                             </ul>
                             <a href="#contact" class="btn btn-outline-light pricing-btn">Mulai Transformasi</a>
                         </div>
@@ -309,7 +313,7 @@
                             <div class="pricing-badge"><svg width="14" height="14"><use href="#icon-star"></use></svg> Paling Ideal</div>
                             <div class="pricing-header">
                                 <h3>Corporate</h3>
-                                <p>Platform terintegrasi skala penuh.</p>
+                                <p>Platform eksekusi AI dan Data skala penuh perusahaan.</p>
                             </div>
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
@@ -317,16 +321,15 @@
                                 <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 108 Jt</del> <strong style="color: var(--color-primary);">Rp 90 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Platform:</strong> Akses Seluruh Modul Core</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kapasitas Analitik:</strong> Hingga 50.000 Dokumen / bln</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Pelatihan:</strong> 3 Sesi Penuh (On/Offline)</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>SLA:</strong> Respons Insiden Kritis &lt; 2 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Platform Engine:</strong> Seluruh Basis Modul Core</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Workforce:</strong> Akses Seluruh Agen AI</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kapasitas:</strong> Hingga 50.000 Dokumen/bln</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>SLA Prioritas:</strong> Respons Kritis &lt; 2 Jam</li>
                             </ul>
                             <a href="#contact" class="btn btn-primary btn-full">Ambil Paket Corporate</a>
                         </div>
                     </div>
                     
-                    <!-- ADD-ONS -->
                     <div style="margin-top: 2.5rem; background-color: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 16px; padding: 1.5rem 2rem; max-width: 900px; margin-left: auto; margin-right: auto; box-shadow: var(--shadow-sm);">
                         <h4 style="font-family: var(--font-heading); font-size: 1.125rem; color: var(--color-primary); margin-bottom: 1rem; text-align: center;">Penyesuaian Kapasitas (Add-ons)</h4>
                         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
@@ -346,7 +349,6 @@
                     </div>
                 </div>
 
-                <!-- TAB CONTENT 2: ENTERPRISE (PERMANENT) -->
                 <div class="tab-content" id="tab-large">
                     <div class="large-grid">
                         <div class="pricing-card enterprise-card">
@@ -361,10 +363,10 @@
                                 <span class="price-period">One-Time Charge (Biaya Implementasi Sekali Bayar)<br>+ Opsional 20% Annual Maintenance Coverage.</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Tanpa Batas Pengguna:</strong> Tambahkan staf tanpa biaya lisensi ekstra.</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Integrasi Ekosistem:</strong> API khusus untuk terhubung dengan instrumen legacy Anda.</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kendali Penuh (Data Governance):</strong> Data dilatih dan dikelola secara terisolasi.</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Asistensi Dedikasi:</strong> Tim <em>Solution Architect</em> eksklusif mengawal masa transisi.</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Code Ownership:</strong> Hak akses penuh modifikasi sumber kode.</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Engine:</strong> LLM mandiri dilatih dengan data internal perusahaan.</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Integrasi Ekosistem:</strong> Terhubung dengan sistem operasional *legacy* Anda.</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kepatuhan Regulasi:</strong> Kesesuaian standar ITIL & Audit Jejak Digital.</li>
                             </ul>
                             <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Konsultasikan Arsitektur Bersama Kami</a>
                         </div>
@@ -373,7 +375,7 @@
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
+        <!-- CONTACT SECTION (Lead Qualification) -->
         <section class="contact-section section-padding" id="contact">
             <div class="container contact-wrapper">
                 <div class="contact-info">
@@ -383,8 +385,8 @@
                     <div style="margin-top: 2rem;">
                         <ul class="contact-benefits" style="font-weight: 500;">
                             <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Pemetaan alur operasional yang paling memakan biaya.</li>
-                            <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Tinjauan kelayakan integrasi sistem.</li>
-                            <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Estimasi <em>Total Cost of Ownership</em> (TCO).</li>
+                            <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Tinjauan kelayakan integrasi sistem TI Anda.</li>
+                            <li><svg width="20" height="20"><use href="#icon-check"></use></svg> Estimasi Proyeksi <em>Total Cost of Ownership</em> (TCO).</li>
                         </ul>
                     </div>
                 </div>
@@ -407,7 +409,7 @@
                                 <input type="text" id="jobRole" required placeholder="Cth: Direktur Operasional">
                             </div>
                             <div class="form-group">
-                                <label for="selectedPlan">Fase Implementasi yang Direncanakan</label>
+                                <label for="selectedPlan">Fase Implementasi Diharapkan</label>
                                 <select id="selectedPlan" required>
                                     <option value="" disabled selected>Pilih Skema</option>
                                     <option value="SaaS - Starter/Business">Pilot Skala Kecil (SaaS)</option>
@@ -421,14 +423,15 @@
                             <label for="message">Proses bisnis apa yang menjadi kendala terbesar (bottleneck) tim Anda saat ini?</label>
                             <textarea id="message" rows="3" required placeholder="Jelaskan secara singkat..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full btn-lg">Kirim Ringkasan Asesmen ke RANI (via WA)</button>
+                        <!-- Diperbaiki: CTA Bebas Asumsi Hype RANI -->
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">Kirim Ringkasan Asesmen via WhatsApp</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER (Professional, Aman, Bersih) -->
     <footer class="footer dark-section">
         <div class="container">
             <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--color-dark-border);">
@@ -446,6 +449,7 @@
                 <div>
                     <h4 style="color: #FFF; margin-bottom: 1.5rem; font-size: 1rem;">Edukasi & Pelatihan</h4>
                     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
+                        <!-- Pemisahan Area Bootcamp -->
                         <li><a href="https://energyx.co.id/event/8" target="_blank" style="color: var(--color-brand-yellow); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">Executive AI Bootcamp &nearr;</a></li>
                         <li><a href="https://www.youtube.com/watch?v=is93cRmo3DI" target="_blank" style="color: #9CA3AF; text-decoration: none; font-size: 0.9375rem;">Webinar Demonstrasi AI</a></li>
                     </ul>
@@ -455,17 +459,17 @@
                     <h4 style="color: #FFF; margin-bottom: 1.5rem; font-size: 1rem;">PT. EnergyX 369 Indonesia</h4>
                     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
                         <li><a href="mailto:info@energyx.co.id" style="color: var(--color-brand-blue); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">info@energyx.co.id</a></li>
-                        <li><a href="https://wa.me/6285285586496" target="_blank" style="color: var(--color-brand-blue); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">+62 852-8558-6496 (RANI WA)</a></li>
+                        <li><a href="https://wa.me/6285285586496" target="_blank" style="color: var(--color-brand-blue); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">+62 852-8558-6496 (WhatsApp)</a></li>
                         <li style="margin-top: 1rem;">
-                            <a href="https://www.energyx.co.id" target="_blank" style="color: #9CA3AF; text-decoration: none; font-size: 0.875rem; margin-right: 1rem;">Website Utama</a>
-                            <a href="https://www.energyx.co.id" target="_blank" style="color: #9CA3AF; text-decoration: none; font-size: 0.875rem;">Kebijakan Privasi</a>
+                            <!-- Link Privacy dihilangkan, sisa Link Utama -->
+                            <a href="https://www.energyx.co.id" target="_blank" style="color: #9CA3AF; text-decoration: none; font-size: 0.875rem;">Website Resmi Korporat</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                 <p style="color: #6B7280; font-size: 0.875rem; margin: 0;">&copy; 2026 PT. EnergyX 369 Indonesia. All rights reserved.</p>
-                <div style="color: #6B7280; font-size: 0.875rem;">Powered by Frappe Architecture</div>
+                <div style="color: #6B7280; font-size: 0.875rem;">Built on Frappe Framework</div>
             </div>
         </div>
     </footer>
@@ -489,7 +493,7 @@
             const selectedPlan = document.getElementById('selectedPlan').value;
             const message = document.getElementById('message').value.trim();
 
-            const waTemplate = `Halo RANI! 👋\nSaya ingin mengirimkan ringkasan kebutuhan sistem untuk dijadwalkan sesi asesmen:\n\n*Profil Pemohon:*\n👤 Nama: ${fullName}\n💼 Jabatan: ${jobRole}\n📧 Corporate Email: ${workEmail}\n🎯 Skema Diminati: ${selectedPlan}\n\n*Kendala Operasional / Bottleneck:*\n"${message}"\n\nKapan tim Solution Architect bisa melakukan sesi telekonferensi untuk penjajakan lebih lanjut? Terima kasih.`;
+            const waTemplate = `Halo Tim EnergyX! 👋\nSaya ingin mengirimkan ringkasan kebutuhan sistem untuk dijadwalkan sesi asesmen:\n\n*Profil Pemohon:*\n👤 Nama: ${fullName}\n💼 Jabatan: ${jobRole}\n📧 Corporate Email: ${workEmail}\n🎯 Skema Diminati: ${selectedPlan}\n\n*Kendala Operasional / Bottleneck:*\n"${message}"\n\nKapan tim Solution Architect bisa melakukan sesi telekonferensi untuk penjajakan lebih lanjut? Terima kasih.`;
 
             const encodedMessage = encodeURIComponent(waTemplate);
             const waURL = `https://wa.me/6285285586496?text=${encodedMessage}`;
