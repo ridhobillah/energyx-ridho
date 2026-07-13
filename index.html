@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnergyX 369 — AI-Powered ERP Software</title>
-    <meta name="description" content="Otomatisasi operasional perusahaan Anda tanpa vendor lock-in. Kendali penuh atas data, terintegrasi dengan AI yang menyederhanakan alur kerja kompleks.">
     
-    <meta property="og:title" content="EnergyX 369 — AI-Powered ERP">
-    <meta property="og:description" content="ERP Berbasis AI tanpa vendor lock-in untuk perusahaan Indonesia.">
+    <title>EnergyX 369 — Enterprise AI ERP Software</title>
+    <meta name="description" content="Otomatisasi operasional perusahaan Anda tanpa vendor lock-in. Kendali penuh atas data, diotaki oleh AI yang menyederhanakan alur kerja terkompleks sekalipun.">
+    
+    <meta property="og:title" content="EnergyX 369 — Enterprise AI ERP">
+    <meta property="og:description" content="ERP Berbasis AI tanpa vendor lock-in untuk industri Indonesia.">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,8 +30,10 @@
     <header class="header">
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
+                <img src="assets/logo.webp" alt="EnergyX 369 - Enterprise AI ERP Software" class="logo-img" width="36" height="36" loading="eager">
                 <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
             </a>
+            
             <ul class="nav-links" id="navLinks">
                 <li><a href="#modules">Modul Core</a></li>
                 <li><a href="#architect">Arsitektur</a></li>
@@ -40,8 +44,10 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section class="hero dark-section" id="hero">
             <div class="container hero-grid">
+                
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="badge-dot"></span>
@@ -50,7 +56,8 @@
                     <h1 class="hero-title">
                         Enterprise ERP.<br>
                         Automated by AI.<br>
-                        <span class="accent-highlight">Owned by You.</span>
+                        <!-- Perbaikan Logika: Menghindari kata Owned by You pada skema SaaS -->
+                        <span class="accent-highlight">Your Data, Owned by You.</span>
                     </h1>
                     <p class="hero-desc">
                         Otomatisasi operasional perusahaan Anda tanpa <em>vendor lock-in</em>. Arsitektur <em>open-source</em> yang diotaki oleh ekosistem AI mandiri untuk mengeksekusi alur kerja terkompleks. Dirancang khusus untuk skala industri.
@@ -87,9 +94,25 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
+        <!-- TRUST BAR -->
+        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan">
+            <div class="container">
+                <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
+                <div class="trust-logos">
+                    <span class="tech-badge">Frappe Framework</span>
+                    <span class="tech-badge">NVIDIA H200 Infra</span>
+                    <span class="tech-badge">Local Qwen LLM</span>
+                    <span class="tech-badge">n8n Workflow Automation</span>
+                    <span class="tech-badge">ITIL & PRINCE2 Aligned</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MODULES SECTION -->
         <section class="modules section-padding" id="modules" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
@@ -134,6 +157,7 @@
             </div>
         </section>
 
+        <!-- ARCHITECTURE SECTION -->
         <section class="architecture section-padding" id="architect">
             <div class="container">
                 <div class="section-header">
@@ -165,6 +189,7 @@
             </div>
         </section>
 
+        <!-- PRICING SECTION -->
         <section class="pricing section-padding" id="pricing" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
@@ -178,6 +203,7 @@
                     <button class="tab-btn" data-target="tab-large">Large Enterprise</button>
                 </div>
 
+                <!-- TAB CONTENT 1: SME -->
                 <div class="tab-content active" id="tab-sme">
                     <div class="sme-grid">
                         <div class="pricing-card">
@@ -188,10 +214,12 @@
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
                                 <span class="price-amount">3<span class="price-suffix">Jt</span></span>
-                                <span class="price-period">/ bulan<br>(Ditagih Rp 36 Jt / tahun)</span>
+                                <!-- Perbaikan Logika: Diskon 2 bulan untuk pembayaran tahunan -->
+                                <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 36 Jt</del> <strong>Rp 30 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 1 Pilihan Modul</li>
+                                <!-- Perbaikan Logika: Menghindari penyebutan 1 Pilihan Modul untuk ERP -->
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 1 Modul Independen</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 3 Jt Token / bulan</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 1 Sesi Online @3 Jam</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 3 Jam Online</li>
@@ -207,7 +235,7 @@
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
                                 <span class="price-amount">6<span class="price-suffix">Jt</span></span>
-                                <span class="price-period">/ bulan<br>(Ditagih Rp 72 Jt / tahun)</span>
+                                <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 72 Jt</del> <strong>Rp 60 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 2 Pilihan Modul</li>
@@ -227,18 +255,21 @@
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
                                 <span class="price-amount">9<span class="price-suffix">Jt</span></span>
-                                <span class="price-period">/ bulan<br>(Ditagih Rp 108 Jt / tahun)</span>
+                                <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 108 Jt</del> <strong>Rp 90 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Akses Semua Modul</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 9 Jt / bulan</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 3 Sesi (Online/Offline) @3 Jam</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 9 Jam</li>
+                                <!-- Perbaikan Logika: SLA diubah ke standar respons B2B premium -->
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Respons Insiden Kritis &lt; 2 Jam</li>
                             </ul>
                             <a href="#contact" class="btn btn-primary btn-full">Pilih Corporate</a>
                         </div>
                     </div>
                     
+                    <!-- ADD-ONS KHUSUS PAKET SME (Harga Diperbarui untuk Gengsi Brand) -->
                     <div style="margin-top: 2.5rem; background-color: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 16px; padding: 1.5rem 2rem; max-width: 900px; margin-left: auto; margin-right: auto; box-shadow: var(--shadow-sm);">
                         <h4 style="font-family: var(--font-heading); font-size: 1.125rem; color: var(--color-primary); margin-bottom: 1rem; text-align: center;">Kapasitas Tambahan (Add-ons)</h4>
                         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
@@ -248,16 +279,18 @@
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--color-text);">
                                 <svg width="18" height="18" style="color: var(--color-brand-blue);"><use href="#icon-check"></use></svg>
-                                <span><strong>Training:</strong> Rp 369.000 per Sesi @3 Jam</span>
+                                <span><strong>Training:</strong> <del style="color: #9CA3AF;">Rp 1.500.000</del> <strong style="color: var(--color-brand-red);">Rp 369.000</strong> per Sesi @3 Jam (Promo)</span>
                             </div>
                             <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--color-text);">
                                 <svg width="18" height="18" style="color: var(--color-brand-blue);"><use href="#icon-check"></use></svg>
-                                <span><strong>Consultation:</strong> Rp 369.000 per Jam Online</span>
+                                <span><strong>Consultation:</strong> <del style="color: #9CA3AF;">Rp 1.000.000</del> <strong style="color: var(--color-brand-red);">Rp 369.000</strong> per Jam Online (Promo)</span>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
+                <!-- TAB CONTENT 2: LARGE ENTERPRISE -->
                 <div class="tab-content" id="tab-large">
                     <div class="large-grid">
                         <div class="pricing-card enterprise-card">
@@ -284,6 +317,7 @@
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section class="contact-section section-padding" id="contact">
             <div class="container contact-wrapper">
                 <div class="contact-info">
