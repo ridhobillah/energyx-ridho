@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="styles.css?v=2.0">
 </head>
 <body>
     <svg style="display: none;">
@@ -28,7 +29,6 @@
         </symbol>
     </svg>
 
-    <!-- HEADER -->
     <header class="header">
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
@@ -45,7 +45,6 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
         <section class="hero dark-section" id="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -59,11 +58,9 @@
                     <p class="hero-desc">
                         Berhenti membuang waktu eksekutif untuk pekerjaan administratif. EnergyX 369 menghadirkan Agen AI yang bekerja 24/7 untuk memproses <em>invoice</em>, menyusun laporan keuangan, dan mengelola rantai pasok.
                     </p>
-                    <!-- EMOTIONAL HOOK -->
                     <div class="emotional-quote">
                         "Setiap jam yang dihabiskan karyawan Anda untuk menyalin data manual adalah waktu yang digunakan kompetitor Anda untuk memenangkan pasar."
                     </div>
-
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary btn-lg">Calculate Your ROI</a>
                         <a href="#demo" class="btn btn-outline-light btn-lg" style="display: flex; gap: 0.5rem;">
@@ -72,7 +69,6 @@
                     </div>
                 </div>
                 
-                <!-- AI Action Visual Hook -->
                 <div class="hero-visual">
                     <div class="workflow-card ai-focus-card">
                         <div class="wf-header">
@@ -98,7 +94,6 @@
             </div>
         </section>
 
-        <!-- ROI METRICS BAR (With Disclaimer context) -->
         <div class="roi-metrics-bar">
             <div class="container roi-flex">
                 <div class="roi-item">
@@ -126,7 +121,6 @@
             </div>
         </div>
 
-        <!-- THE STORY & DEMO SECTION (CRUCIAL UPDATE) -->
         <section class="demo-section section-padding" id="demo" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header" style="max-width: 800px;">
@@ -136,11 +130,9 @@
                 </div>
 
                 <div class="demo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                    
-                    <!-- Live Demo Video -->
                     <div class="demo-video-card">
                         <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/is93cRmo3DI" title="Demonstrasi Karyawan Digital AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/is93cRmo3DI" title="Demonstrasi Karyawan Digital AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div style="padding: 1.5rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-top: none; border-radius: 0 0 12px 12px;">
                             <h3 style="font-size: 1.25rem; color: var(--color-primary); margin-bottom: 0.5rem;">Webinar Karyawan Digital AI 2026</h3>
@@ -148,10 +140,9 @@
                         </div>
                     </div>
 
-                    <!-- Founder Story & Bootcamp CTA -->
                     <div class="bootcamp-card">
                         <div class="video-container" style="border-radius: 12px 12px 0 0;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/45BPZ_vTN_E" title="Cuplikan Bootcamp AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/45BPZ_vTN_E" title="Cuplikan Bootcamp AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div style="padding: 2rem; background: var(--color-dark); color: #FFF; border-radius: 0 0 12px 12px; position: relative; overflow: hidden;">
                             <div style="position: absolute; top: 0; right: 0; background: var(--color-brand-red); color: #FFF; font-size: 0.75rem; font-weight: 800; padding: 0.25rem 1rem; border-bottom-left-radius: 12px;">PROMO EARLY BIRD</div>
@@ -171,7 +162,6 @@
             </div>
         </section>
 
-        <!-- MEET THE AI EMPLOYEE SECTION -->
         <section class="ai-employee section-padding" id="ai-employee">
             <div class="container">
                 <div class="section-header">
@@ -226,7 +216,6 @@
             </div>
         </section>
 
-        <!-- PRICING SECTION -->
         <section class="pricing section-padding" id="pricing" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
@@ -240,7 +229,6 @@
                     <button class="tab-btn" data-target="tab-enterprise">Corporate & Enterprise</button>
                 </div>
 
-                <!-- TAB CONTENT 1: Growth -->
                 <div class="tab-content active" id="tab-pilot">
                     <div class="sme-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto;">
                         <div class="pricing-card">
@@ -283,7 +271,6 @@
                     </div>
                 </div>
 
-                <!-- TAB CONTENT 2: ENTERPRISE -->
                 <div class="tab-content" id="tab-enterprise">
                     <div class="large-grid">
                         <div class="pricing-card enterprise-card">
@@ -300,7 +287,7 @@
                             <ul class="pricing-features">
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Code Ownership:</strong> Modifikasi sumber kode.</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Engine:</strong> LLM mandiri dengan data internal.</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Integrasi:</strong> Terhubung dengan sistem *legacy* (SAP/Oracle).</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Integrasi:</strong> Terhubung dengan sistem legacy (SAP/Oracle).</li>
                             </ul>
                             <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Hubungi Enterprise Architect</a>
                         </div>
@@ -309,7 +296,6 @@
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
         <section class="contact-section section-padding" id="contact">
             <div class="container contact-wrapper">
                 <div class="contact-info">
@@ -362,7 +348,6 @@
         </section>
     </main>
 
-    <!-- FOOTER (SAFE TRUST SIGNALS) -->
     <footer class="footer dark-section">
         <div class="container">
             <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--color-dark-border);">
@@ -372,7 +357,7 @@
                     <p style="margin-top: 1.5rem; color: #9CA3AF; font-size: 0.9375rem; line-height: 1.7; max-width: 400px;">
                         EnergyX - Energizing People, Process & Technology. ⚡ Mengubah operasional perusahaan menjadi organisasi adaptif berbasis kecerdasan buatan.
                     </p>
-                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
                         <div style="border: 1px solid var(--color-dark-border); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.75rem; font-weight: 700; color: #9CA3AF;">Enterprise-Grade Architecture</div>
                         <div style="border: 1px solid var(--color-dark-border); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.75rem; font-weight: 700; color: #9CA3AF;">ITIL Framework Aligned</div>
                     </div>
@@ -391,9 +376,9 @@
                     <h4 style="color: #FFF; margin-bottom: 1.5rem; font-size: 1rem;">PT. EnergyX 369 Indonesia</h4>
                     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
                         <li><a href="mailto:info@energyx.co.id" style="color: var(--color-brand-blue); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">info@energyx.co.id</a></li>
-                        <li><a href="http://wa.me/6285285586496" target="_blank" style="color: var(--color-brand-blue); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">+62 852-8558-6496 (RANI WA)</a></li>
+                        <li><a href="http://wa.me/6285285586496" target="_blank" style="color: var(--color-brand-blue); text-decoration: none; font-size: 0.9375rem; font-weight: 600;">+62 852-8558-6496 (RANI)</a></li>
                         <li style="margin-top: 1rem;">
-                            <a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.875rem; margin-right: 1rem;">Privacy Policy</a>
+                            <a href="#" style="color: #9CA3AF; text-decoration: none; font-size: 0.875rem;">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -421,14 +406,4 @@
             const workEmail = document.getElementById('workEmail').value.trim();
             const jobRole = document.getElementById('jobRole').value.trim();
             const companySize = document.getElementById('companySize').value;
-            const message = document.getElementById('message').value.trim();
-
-            const waTemplate = `Halo RANI! 👋\nSaya ingin menjadwalkan AI Readiness Assessment.\n\n*Profil Eksekutif:*\n👤 Nama: ${fullName}\n💼 Jabatan: ${jobRole}\n🏢 Skala Perusahaan: ${companySize}\n📧 Corporate Email: ${workEmail}\n\n*Bottleneck Operasional Saat Ini:*\n"${message}"\n\nKapan kita bisa melakukan sesi konsultasi? Terima kasih.`;
-
-            const encodedMessage = encodeURIComponent(waTemplate);
-            const waURL = `http://wa.me/6285285586496?text=${encodedMessage}`;
-            window.open(waURL, '_blank');
-        });
-    </script>
-</body>
-</html>
+            const message = document.getElementById('message').value
