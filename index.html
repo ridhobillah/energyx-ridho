@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=2.1">
+    
+    <!-- Cache Busting agar perubahan langsung terlihat oleh pengunjung -->
+    <link rel="stylesheet" href="styles.css?v=2.2">
 </head>
 <body>
     <svg style="display: none;">
@@ -28,6 +30,7 @@
         </symbol>
     </svg>
 
+    <!-- HEADER -->
     <header class="header">
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
@@ -44,6 +47,7 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section class="hero dark-section" id="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -69,6 +73,7 @@
                     </div>
                 </div>
                 
+                <!-- AI Action Visual Hook -->
                 <div class="hero-visual">
                     <div class="workflow-card ai-focus-card">
                         <div class="wf-header">
@@ -94,6 +99,7 @@
             </div>
         </section>
 
+        <!-- ROI METRICS BAR -->
         <div class="roi-metrics-bar">
             <div class="container roi-flex">
                 <div class="roi-item">
@@ -121,6 +127,7 @@
             </div>
         </div>
 
+        <!-- THE STORY & DEMO SECTION -->
         <section class="demo-section section-padding" id="demo" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header" style="max-width: 800px;">
@@ -131,6 +138,7 @@
 
                 <div class="demo-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
                     
+                    <!-- Live Demo Video -->
                     <div class="demo-video-card">
                         <div class="video-container">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/is93cRmo3DI" title="Demonstrasi Karyawan Digital AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -141,6 +149,7 @@
                         </div>
                     </div>
 
+                    <!-- Founder Story & Bootcamp CTA -->
                     <div class="bootcamp-card">
                         <div class="video-container" style="border-radius: 12px 12px 0 0;">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/45BPZ_vTN_E" title="Cuplikan Bootcamp AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -163,6 +172,7 @@
             </div>
         </section>
 
+        <!-- MEET THE AI EMPLOYEE SECTION -->
         <section class="ai-employee section-padding" id="ai-employee">
             <div class="container">
                 <div class="section-header">
@@ -217,62 +227,107 @@
             </div>
         </section>
 
+        <!-- PRICING SECTION -->
         <section class="pricing section-padding" id="pricing" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">INVESTASI TRANSFORMASI</span>
-                    <h2>Harga yang Proporsional dengan ROI</h2>
-                    <p>Satu Agen AI kami mampu menggantikan beban kerja 5-10 staf administratif.</p>
+                    <span class="section-eyebrow">SKEMA INVESTASI SAAS</span>
+                    <h2>Skalabilitas Tanpa Biaya Tersembunyi</h2>
+                    <p>Pilih arsitektur yang sesuai dengan ukuran operasional Anda. Harga transparan tanpa batasan <em>user lisence</em> bulanan yang mencekik arus kas perusahaan.</p>
                 </div>
 
                 <div class="pricing-tabs">
-                    <button class="tab-btn active" data-target="tab-pilot">Growth Phase</button>
-                    <button class="tab-btn" data-target="tab-enterprise">Corporate & Enterprise</button>
+                    <button class="tab-btn active" data-target="tab-sme">SME (Small Medium Enterprise)</button>
+                    <button class="tab-btn" data-target="tab-large">Large Enterprise</button>
                 </div>
 
-                <div class="tab-content active" id="tab-pilot">
-                    <div class="sme-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto;">
+                <!-- TAB CONTENT 1: SME -->
+                <div class="tab-content active" id="tab-sme">
+                    <!-- Tiga Paket Grid Utama -->
+                    <div class="sme-grid">
+                        
                         <div class="pricing-card">
                             <div class="pricing-header">
-                                <h3>AI Pilot</h3>
-                                <p>Fase validasi ROI untuk adopsi awal.</p>
+                                <h3>Starter</h3>
+                                <p>Bagi UMKM yang bertransformasi digital.</p>
                             </div>
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
-                                <span class="price-amount">15<span class="price-suffix">Jt</span></span>
-                                <span class="price-period">/ bulan<br>(Ditagih tahunan)</span>
+                                <span class="price-amount">3<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 36 Jt</del> <strong style="color: var(--color-primary);">Rp 30 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Cloud ERP Terdedikasi</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> 1 Agen AI Spesifik (Cth: Finance)</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> 5 Juta AI Tokens / bln</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 1 Modul Independen</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 3 Jt Token / bulan</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 1 Sesi Online @3 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 3 Jam Online</li>
                             </ul>
-                            <a href="#contact" class="btn btn-outline-light pricing-btn">Jadwalkan Pilot</a>
+                            <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Starter</a>
+                        </div>
+
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Business</h3>
+                                <p>Sistem terpadu untuk operasional menengah.</p>
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-currency">Rp</span>
+                                <span class="price-amount">6<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 72 Jt</del> <strong style="color: var(--color-primary);">Rp 60 Jt</strong> / tahun)</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 2 Pilihan Modul</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 6 Jt / bulan</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 2 Sesi Online @3 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 6 Jam</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Business</a>
                         </div>
 
                         <div class="pricing-card best-seller">
-                            <div class="pricing-badge"><svg width="14" height="14"><use href="#icon-star"></use></svg> Standard Industri</div>
+                            <div class="pricing-badge"><svg width="14" height="14"><use href="#icon-star"></use></svg> Best Seller</div>
                             <div class="pricing-header">
-                                <h3>Scale Operations</h3>
-                                <p>Transformasi antar departemen tanpa batas.</p>
+                                <h3>Corporate</h3>
+                                <p>Ekosistem AI-ERP skala penuh bagi perusahaan.</p>
                             </div>
                             <div class="pricing-price">
                                 <span class="price-currency">Rp</span>
-                                <span class="price-amount">35<span class="price-suffix">Jt</span></span>
-                                <span class="price-period">/ bulan<br>(Ditagih tahunan)</span>
+                                <span class="price-amount">9<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">/ bulan<br>(Ditagih <del style="color: #9CA3AF;">Rp 108 Jt</del> <strong style="color: var(--color-primary);">Rp 90 Jt</strong> / tahun)</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> High-Availability Private Cloud</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Multi-Agent (Finance, SCM, HR)</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> 25 Juta AI Tokens / bln</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> SLA Respons Insiden &lt; 2 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Akses Semua Modul</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 9 Jt / bulan</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 3 Sesi (On/Offline) @3 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 9 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Respons Insiden Kritis &lt; 2 Jam</li>
                             </ul>
-                            <a href="#contact" class="btn btn-primary btn-full">Klaim Scale</a>
+                            <a href="#contact" class="btn btn-primary btn-full">Pilih Corporate</a>
+                        </div>
+                    </div>
+                    
+                    <!-- ADD-ONS KHUSUS PAKET SME -->
+                    <div style="margin-top: 2.5rem; background-color: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 16px; padding: 1.5rem 2rem; max-width: 900px; margin-left: auto; margin-right: auto; box-shadow: var(--shadow-sm);">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.125rem; color: var(--color-primary); margin-bottom: 1rem; text-align: center;">Kapasitas Tambahan Khusus (Add-ons)</h4>
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--color-text);">
+                                <svg width="18" height="18" style="color: var(--color-brand-blue);"><use href="#icon-check"></use></svg>
+                                <span><strong>AI Tokens:</strong> Rp 36.900 per 1 Jt Token</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--color-text);">
+                                <svg width="18" height="18" style="color: var(--color-brand-blue);"><use href="#icon-check"></use></svg>
+                                <span><strong>Training:</strong> <del style="color: #9CA3AF;">Rp 1.500.000</del> <strong style="color: var(--color-brand-red);">Rp 369.000</strong> / Sesi @3 Jam</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--color-text);">
+                                <svg width="18" height="18" style="color: var(--color-brand-blue);"><use href="#icon-check"></use></svg>
+                                <span><strong>Consultation:</strong> <del style="color: #9CA3AF;">Rp 1.000.000</del> <strong style="color: var(--color-brand-red);">Rp 369.000</strong> / Jam Online</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-content" id="tab-enterprise">
+                <!-- TAB CONTENT 2: ENTERPRISE -->
+                <div class="tab-content" id="tab-large">
                     <div class="large-grid">
                         <div class="pricing-card enterprise-card">
                             <div class="pricing-header">
@@ -283,12 +338,13 @@
                                 <span class="price-label">Model Investasi Capex Mulai Dari</span>
                                 <span class="price-currency">Rp</span>
                                 <span class="price-amount">900<span class="price-suffix">Jt</span></span>
-                                <span class="price-period">One-Time Charge (OTC) Lisensi Permanen</span>
+                                <span class="price-period">One-Time Charge (OTC) Lisensi Permanen<br>+ Opsional 20% Annual Maint.</span>
                             </div>
                             <ul class="pricing-features">
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Code Ownership:</strong> Modifikasi sumber kode.</li>
-                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Engine:</strong> LLM mandiri dengan data internal.</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Code Ownership:</strong> Hak akses penuh modifikasi sumber kode.</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Engine:</strong> LLM mandiri dengan data internal perusahaan.</li>
                                 <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Integrasi:</strong> Terhubung dengan sistem legacy (SAP/Oracle).</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Kepatuhan:</strong> Standar ITIL, IATF, & Audit Jejak Digital Penuh.</li>
                             </ul>
                             <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Hubungi Enterprise Architect</a>
                         </div>
@@ -297,6 +353,7 @@
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section class="contact-section section-padding" id="contact">
             <div class="container contact-wrapper">
                 <div class="contact-info">
@@ -339,6 +396,17 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="selectedPlan">Paket Minat (SaaS / Enterprise)</label>
+                            <select id="selectedPlan" required>
+                                <option value="" disabled selected>Pilih Rencana Investasi</option>
+                                <option value="Starter (3 Jt/bln)">Starter (3 Jt/bln)</option>
+                                <option value="Business (6 Jt/bln)">Business (6 Jt/bln)</option>
+                                <option value="Corporate (9 Jt/bln)">Corporate (9 Jt/bln)</option>
+                                <option value="Enterprise (OTC 900 Jt)">Enterprise (OTC 900 Jt)</option>
+                                <option value="Hanya Konsultasi Dulu">Belum Tahu, Konsultasi Dulu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="message">Bottleneck operasional saat ini?</label>
                             <textarea id="message" rows="3" required placeholder="Cth: Approval terlalu lama..."></textarea>
                         </div>
@@ -349,6 +417,7 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer dark-section">
         <div class="container">
             <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--color-dark-border);">
@@ -392,6 +461,7 @@
         </div>
     </footer>
 
+    <!-- JAVASCRIPT LOGIC -->
     <script>
         // Logika Perpindahan Tab Pricing
         document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -410,25 +480,23 @@
             const workEmail = document.getElementById('workEmail').value.trim();
             const jobRole = document.getElementById('jobRole').value.trim();
             const companySize = document.getElementById('companySize').value;
+            const selectedPlan = document.getElementById('selectedPlan').value;
             const message = document.getElementById('message').value.trim();
 
-            const waTemplate = `Halo RANI! 👋\nSaya ingin menjadwalkan AI Readiness Assessment.\n\n*Profil Eksekutif:*\n👤 Nama: ${fullName}\n💼 Jabatan: ${jobRole}\n🏢 Skala Perusahaan: ${companySize}\n📧 Corporate Email: ${workEmail}\n\n*Bottleneck Operasional Saat Ini:*\n"${message}"\n\nKapan kita bisa melakukan sesi konsultasi? Terima kasih.`;
+            const waTemplate = `Halo RANI! 👋\nSaya ingin menjadwalkan AI Readiness Assessment.\n\n*Profil Eksekutif:*\n👤 Nama: ${fullName}\n💼 Jabatan: ${jobRole}\n🏢 Skala Perusahaan: ${companySize}\n📧 Corporate Email: ${workEmail}\n🎯 Paket Diminati: ${selectedPlan}\n\n*Bottleneck Operasional Saat Ini:*\n"${message}"\n\nKapan kita bisa melakukan sesi konsultasi? Terima kasih.`;
 
             const encodedMessage = encodeURIComponent(waTemplate);
             const waURL = `https://wa.me/6285285586496?text=${encodedMessage}`;
             window.open(waURL, '_blank');
         });
 
-        // Logika Smooth Scroll yang Diperbarui (Mencegah tautan internal nyangkut di "#")
+        // Logika Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
-                
-                // Mencegah error jika href hanya berisi "#"
                 if (targetId !== '#') {
                     e.preventDefault();
                     const targetElement = document.querySelector(targetId);
-                    
                     if (targetElement) {
                         targetElement.scrollIntoView({
                             behavior: 'smooth',
