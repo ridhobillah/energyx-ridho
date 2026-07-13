@@ -28,9 +28,6 @@
     <header class="header">
         <nav class="nav container">
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
-<!--
-                <img src="assets/EnergyX-logo.png" alt="EnergyX 369 - AI-Powered ERP Software" class="logo-img" width="36" height="48" loading="eager">
--->
                 <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -92,20 +89,7 @@
                 </div>
             </div>
         </section>
-<!--
-        <aside class="trust-bar" aria-label="Teknologi dan Kepatuhan">
-            <div class="container">
-                <p class="trust-label">Didukung oleh infrastruktur dan standar industri terbaik:</p>
-                <div class="trust-logos">
-                    <span class="tech-badge">Frappe Framework</span>
-                    <span class="tech-badge">NVIDIA H200 Infra</span>
-                    <span class="tech-badge">Local Qwen LLM</span>
-                    <span class="tech-badge">n8n Workflow Automation</span>
-                    <span class="tech-badge">ITIL & PRINCE2 Aligned</span>
-                </div>
-            </div>
-        </aside>
--->
+
         <section class="modules section-padding" id="modules" style="background-color: var(--color-surface);">
             <div class="container">
                 <div class="section-header">
@@ -189,83 +173,97 @@
                     <p>Pilih arsitektur yang sesuai dengan ukuran operasional Anda. Tanpa batasan <em>user lisence</em> bulanan yang mencekik arus kas perusahaan.</p>
                 </div>
 
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Starter</h3>
-                            <p>Bagi UMKM yang bertransformasi digital.</p>
-                        </div>
-                        <div class="pricing-price">
-                            <span class="price-currency">Rp</span>
-                            <span class="price-amount">3<span class="price-suffix">Jt</span></span>
-                            <span class="price-period">/ bulan<br>(Ditagih Rp 36 Jt / tahun)</span>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 1 Pilihan Modul</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 3 Jt Token / bulan</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 1 Sesi Online @3 Jam</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 3 Jam Online</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Starter</a>
-                    </div>
+                <!-- TABS UI -->
+                <div class="pricing-tabs">
+                    <button class="tab-btn active" data-target="tab-sme">SME (Small Medium Enterprise)</button>
+                    <button class="tab-btn" data-target="tab-large">Large Enterprise</button>
+                </div>
 
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Business</h3>
-                            <p>Sistem terpadu untuk operasional menengah.</p>
+                <!-- TAB CONTENT 1: SME -->
+                <div class="tab-content active" id="tab-sme">
+                    <div class="sme-grid">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Starter</h3>
+                                <p>Bagi UMKM yang bertransformasi digital.</p>
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-currency">Rp</span>
+                                <span class="price-amount">3<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">/ bulan<br>(Ditagih Rp 36 Jt / tahun)</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 1 Pilihan Modul</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 3 Jt Token / bulan</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 1 Sesi Online @3 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 3 Jam Online</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Starter</a>
                         </div>
-                        <div class="pricing-price">
-                            <span class="price-currency">Rp</span>
-                            <span class="price-amount">6<span class="price-suffix">Jt</span></span>
-                            <span class="price-period">/ bulan<br>(Ditagih Rp 72 Jt / tahun)</span>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 2 Pilihan Modul</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 6 Jt / bulan</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 2 Sesi Online @3 Jam</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 6 Jam</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Business</a>
-                    </div>
 
-                    <div class="pricing-card best-seller">
-                        <div class="pricing-badge"><svg width="14" height="14"><use href="#icon-star"></use></svg> Best Seller</div>
-                        <div class="pricing-header">
-                            <h3>Corporate</h3>
-                            <p>Ekosistem AI-ERP skala penuh bagi perusahaan berkembang.</p>
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Business</h3>
+                                <p>Sistem terpadu untuk operasional menengah.</p>
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-currency">Rp</span>
+                                <span class="price-amount">6<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">/ bulan<br>(Ditagih Rp 72 Jt / tahun)</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> 2 Pilihan Modul</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 6 Jt / bulan</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 2 Sesi Online @3 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 6 Jam</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-light pricing-btn">Pilih Business</a>
                         </div>
-                        <div class="pricing-price">
-                            <span class="price-currency">Rp</span>
-                            <span class="price-amount">9<span class="price-suffix">Jt</span></span>
-                            <span class="price-period">/ bulan<br>(Ditagih Rp 108 Jt / tahun)</span>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Akses Semua Modul</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 9 Jt / bulan</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 3 Sesi (Online/Offline) @3 Jam</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 9 Jam</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-primary btn-full">Pilih Corporate</a>
-                    </div>
 
-                    <div class="pricing-card enterprise-card">
-                        <div class="pricing-header">
-                            <h3>Enterprise</h3>
-                            <p>Arsitektur Private Cloud tanpa batas (On-Premise Ready).</p>
+                        <div class="pricing-card best-seller">
+                            <div class="pricing-badge"><svg width="14" height="14"><use href="#icon-star"></use></svg> Best Seller</div>
+                            <div class="pricing-header">
+                                <h3>Corporate</h3>
+                                <p>Ekosistem AI-ERP skala penuh bagi perusahaan berkembang.</p>
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-currency">Rp</span>
+                                <span class="price-amount">9<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">/ bulan<br>(Ditagih Rp 108 Jt / tahun)</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Akses Semua Modul</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> GRATIS 9 Jt / bulan</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> GRATIS 3 Sesi (Online/Offline) @3 Jam</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> GRATIS 9 Jam</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-full">Pilih Corporate</a>
                         </div>
-                        <div class="pricing-price">
-                            <span class="price-label">Mulai dari</span>
-                            <span class="price-currency">Rp</span>
-                            <span class="price-amount">369<span class="price-suffix">Jt</span></span>
-                            <span class="price-period">One-Time Charge (OTC)<br>+ Opsional 20% Annual Maint.</span>
+                    </div>
+                </div>
+
+                <!-- TAB CONTENT 2: LARGE ENTERPRISE -->
+                <div class="tab-content" id="tab-large">
+                    <div class="large-grid">
+                        <div class="pricing-card enterprise-card">
+                            <div class="pricing-header">
+                                <h3>Enterprise</h3>
+                                <p>Arsitektur Private Cloud tanpa batas (On-Premise Ready).</p>
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-label">Mulai dari</span>
+                                <span class="price-currency">Rp</span>
+                                <span class="price-amount">369<span class="price-suffix">Jt</span></span>
+                                <span class="price-period">One-Time Charge (OTC)<br>+ Opsional 20% Annual Maint.</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Full Customization Code</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> Local Private LLM (Unlimited)</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> Dedicated Onboarding Team</li>
+                                <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> UNLIMITED</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Hubungi Sales</a>
                         </div>
-                        <ul class="pricing-features">
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Modul Core:</strong> Full Customization Code</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>AI Tokens:</strong> Local Private LLM (Unlimited)</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Training:</strong> Dedicated Onboarding Team</li>
-                            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> <strong>Consultation:</strong> UNLIMITED</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline-light pricing-btn" style="border-color: var(--color-primary); color: var(--color-primary);">Hubungi Sales</a>
                     </div>
                 </div>
             </div>
@@ -336,6 +334,20 @@
     </footer>
 
     <script>
+        // Tab UI Script Logic
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Hapus state active dari semua tombol dan konten tab
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Berikan state active ke elemen yang sedang diklik
+                this.classList.add('active');
+                document.getElementById(this.dataset.target).classList.add('active');
+            });
+        });
+
+        // WhatsApp Form Validation & Generator Logic
         document.getElementById('waForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
