@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnergyX 369 — Enterprise AI Operating System</title>
     <meta name="description" content="Gantikan pekerjaan administratif manual dengan AI Employees. EnergyX 369 adalah platform AI yang terintegrasi penuh dengan mesin ERP kelas enterprise.">
-    
+
+    <!-- PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="EnergyX 369">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0D1A30">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Responsive Images -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/EnrgyX-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/EnrgyX-logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/EnrgyX-logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +40,14 @@
             <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
                 <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
             </a>
-            <ul class="nav-links">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#demo">Demo Operasional</a></li>
                 <li><a href="#cases">Use-case Nyata</a></li>
                 <li><a href="#ai-employee">Keahlian Agen AI</a></li>
@@ -46,7 +67,7 @@
                     <p class="hero-desc">
                         EnergyX 369 mengintegrasikan mesin ERP dengan Agen AI yang dapat merampingkan tugas repetitif—mulai dari ekstraksi data <em>invoice</em> hingga penyusunan draf pelaporan—secara aman dan terpantau.
                     </p>
-                    <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--color-brand-yellow); font-style: italic; color: #E5E7EB; font-size: 0.9375rem;">
+                    <div class="hero-quote">
                         "Setiap jam yang dihabiskan untuk pekerjaan administratif adalah jam yang tidak digunakan untuk menciptakan nilai bagi pelanggan."
                     </div>
                     <div class="hero-actions">
@@ -55,15 +76,15 @@
                     </div>
                 </div>
                 
-                <div class="hero-visual" style="background: var(--color-dark-surface); border: 1px solid var(--color-dark-border); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-lg);">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--color-dark-border); padding-bottom: 1rem;">
-                        <span style="font-size: 1.25rem;">🤖</span>
-                        <span style="color: #FFF; font-size: 0.875rem;"><strong>RANI</strong> (Finance AI Agent) is typing...</span>
+                <div class="hero-visual">
+                    <div class="hero-visual-header">
+                        <span class="hero-visual-icon">🤖</span>
+                        <span class="hero-visual-title"><strong>RANI</strong> (Finance AI Agent) is typing...</span>
                     </div>
-                    <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.875rem; color: #FFF; margin-left: 1.5rem;">
+                    <div class="hero-visual-input">
                         "Tolong bantu rekonsiliasi data mutasi bank hari ini dengan invoice masuk minggu lalu."
                     </div>
-                    <div style="background: rgba(40, 82, 150, 0.15); border: 1px solid rgba(40, 82, 150, 0.3); padding: 1rem; border-radius: 8px; font-size: 0.875rem; color: #E5E7EB; margin-right: 1.5rem;">
+                    <div class="hero-visual-output">
                         <strong>Analisis selesai.</strong><br><br>
                         ✅ 142 transaksi berhasil dicocokkan dengan data sistem.<br>
                         ⚠️ Ditemukan 3 anomali perbedaan nominal. Draf catatan koreksi telah disiapkan untuk Anda tinjau.
@@ -99,7 +120,7 @@
             </div>
         </div>
 
-        <section class="section-padding" id="demo" style="background-color: var(--color-bg);">
+        <section class="section-padding section-bg" id="demo">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">DEMO OPERASIONAL</span>
@@ -114,7 +135,7 @@
             </div>
         </section>
 
-        <section class="section-padding" id="cases" style="background-color: var(--color-surface);">
+        <section class="section-padding section-surface" id="cases">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">USE-CASE DUNIA NYATA</span>
@@ -154,7 +175,7 @@
             </div>
         </section>
 
-        <section class="section-padding" id="ai-employee" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+        <section class="section-padding section-surface section-bordered" id="ai-employee">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">KEAHLIAN AGEN AI</span>
@@ -214,7 +235,7 @@
             </div>
         </section>
 
-        <section class="section-padding" id="pricing" style="background-color: var(--color-bg);">
+        <section class="section-padding section-bg" id="pricing">
             <div class="container">
                 <div class="section-header">
                     <span class="section-eyebrow">SKEMA INVESTASI</span>
@@ -232,20 +253,20 @@
                         <table class="enterprise-table">
                             <thead>
                                 <tr>
-                                    <th class="text-left" style="width: 25%;">Komponen Layanan</th>
-                                    <th class="highlight-col" style="width: 25%;">
+                                    <th class="text-left">Komponen Layanan</th>
+                                    <th class="highlight-col">
                                         <div class="plan-spacer"></div>
                                         <div class="plan-name">Starter</div>
                                         <div class="plan-price">Rp 3 Jt<span class="period">/bulan</span></div>
                                         <div class="plan-billed">Promo: <del style="color: var(--color-brand-red);">Rp 36 Jt</del> &nbsp;<strong>Rp 30 Jt</strong>/tahun</div>
                                     </th>
-                                    <th class="highlight-col" style="width: 25%;">
+                                    <th class="highlight-col">
                                         <div class="plan-spacer"></div>
                                         <div class="plan-name">Business</div>
                                         <div class="plan-price">Rp 6 Jt<span class="period">/bulan</span></div>
                                         <div class="plan-billed">Promo: <del style="color: var(--color-brand-red);">Rp 72 Jt</del> &nbsp;<strong>Rp 60 Jt</strong>/tahun</div>
                                     </th>
-                                    <th class="highlight-col" style="width: 25%;">
+                                    <th class="highlight-col">
                                         <div class="plan-badge">Paling Ideal</div>
                                         <div class="plan-name">Corporate</div>
                                         <div class="plan-price">Rp 9 Jt<span class="period">/bulan</span></div>
@@ -300,13 +321,13 @@
                         </table>
                     </div>
 
-                    <div style="max-width: 800px; margin: 2rem auto 0 auto;">
-                        <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--color-primary); text-align: left;">Layanan Tambahan (Add-ons) Sesuai Kebutuhan</h4>
+                    <div class="add-ons-container">
+                        <h4 class="add-ons-title">Layanan Tambahan (Add-ons) Sesuai Kebutuhan</h4>
                         <div class="table-responsive">
                             <table class="enterprise-table compact-table">
                                 <tbody>
                                     <tr>
-                                        <td class="text-left" style="width: 40%;"><strong>Kuota Token AI</strong></td>
+                                        <td class="text-left"><strong>Kuota Token AI</strong></td>
                                         <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 90.000</del> &nbsp;<strong>Rp 30.000</strong> / 1 Juta Token</td>
                                     </tr>
                                     <tr>
@@ -330,7 +351,7 @@
                 <div class="tab-content" id="tab-large">
                     <div class="enterprise-card">
                         <div class="enterprise-info">
-                            <span class="section-eyebrow" style="color: var(--color-brand-yellow); background: rgba(242, 169, 0, 0.1);">LISENSI PERMANEN (CAPEX)</span>
+                            <span class="section-eyebrow eyebrow-yellow">LISENSI PERMANEN (CAPEX)</span>
                             <h3>Enterprise Custom Architecture</h3>
                             <p>Hak kepemilikan atas arsitektur sistem pada pusat data internal (<em>On-Premise</em>) perusahaan Anda sendiri dengan isolasi data tingkat tinggi.</p>
                             <ul class="enterprise-features">
@@ -341,10 +362,10 @@
                             </ul>
                         </div>
                         <div class="enterprise-action">
-                            <span style="font-size: 0.75rem; color: #9CA3AF; text-transform: uppercase; font-weight: 700;">Biaya Proyek Mulai Dari</span>
+                            <span class="enterprise-price-label">Biaya Proyek Mulai Dari</span>
                             <span class="price-amount">Rp 369 Juta</span>
-                            <span style="font-size: 0.75rem; color: #9CA3AF; display: block; margin-bottom: 1.5rem;">Biaya Implementasi Sekali Bayar (OTC)<br>+ Opsional 20% Annual Maintenance</span>
-                            <a href="#contact" class="btn btn-primary btn-full" style="background: var(--color-brand-yellow); color: var(--color-primary);">Konsultasikan Arsitektur</a>
+                            <span class="enterprise-price-sublabel">Biaya Implementasi Sekali Bayar (OTC)<br>+ Opsional 20% Annual Maintenance</span>
+                            <a href="#contact" class="btn btn-primary btn-full btn-yellow">Konsultasikan Arsitektur</a>
                         </div>
                     </div>
                 </div>
@@ -394,13 +415,13 @@
                             <textarea id="message" rows="3" required placeholder="Jelaskan secara singkat..."></textarea>
                         </div>
                         
-                        <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 0.75rem; background-color: var(--color-surface); padding: 1rem; border-radius: 8px; border: 1px solid var(--color-border);">
-                            <svg width="20" height="20" style="color: var(--color-brand-blue); flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <div class="privacy-notice">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                             </svg>
                             <div>
-                                <span style="display: block; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">Kepatuhan Privasi Data</span>
-                                <p style="font-size: 0.75rem; color: var(--color-text-muted); margin: 0; line-height: 1.5;">
+                                <span class="privacy-notice-title">Kepatuhan Privasi Data</span>
+                                <p class="privacy-notice-text">
                                     Kami berkomitmen penuh menjaga kerahasiaan data perusahaan Anda. Informasi yang dikirimkan dienkripsi dan murni digunakan oleh <em>Solution Architect</em> kami untuk keperluan kalkulasi asesmen arsitektur tanpa dibagikan ke pihak ketiga.
                                 </p>
                             </div>
@@ -448,6 +469,31 @@
     </footer>
 
     <script>
+        // Mobile Navigation
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isExpanded);
+            navToggle.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // PWA Registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('SW registered'))
+                .catch(() => console.log('SW registration failed'));
+        }
+
+        // Tab Switching
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -457,6 +503,7 @@
             });
         });
 
+        // WhatsApp Form
         document.getElementById('waForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const fullName = document.getElementById('fullName').value.trim();
@@ -472,6 +519,7 @@
             window.open(waURL, '_blank');
         });
 
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
