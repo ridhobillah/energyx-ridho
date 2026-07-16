@@ -310,12 +310,176 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
     .contact-wrapper { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-    .nav-links { display: none; } 
-    .hero-title { font-size: 2.25rem; }
-    .roi-flex { grid-template-columns: 1fr; }
-    .uniform-grid { grid-template-columns: 1fr; }
-    .ai-agents-grid { grid-template-columns: 1fr; }
-    .enterprise-features { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    /* SKIP LINK */
+    .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        z-index: 10000;
+        background: var(--color-brand-blue);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+    }
+    .skip-link:focus {
+        left: 0;
+        top: 0;
+    }
+
+    /* NAV - Improved */
+    .nav-links { display: none; }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 0.5rem;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        z-index: 999;
+        overflow-y: auto;
+        animation: slideDown 0.25s ease;
+    }
+    @keyframes slideDown {
+        from { transform: translateY(-5px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    .nav-links a {
+        padding: 0.875rem 0;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+    .nav-links a.nav-cta {
+        margin-top: 0.5rem;
+        background: var(--color-cta);
+        color: white !important;
+        padding: 0.875rem;
+        border-radius: 6px;
+        text-align: center;
+        border-bottom: none;
+    }
+    .nav-toggle { min-width: 48px; min-height: 48px; }
+
+    /* HERO - Better spacing */
+    .hero { padding-top: 80px; padding-bottom: 2rem; }
+    .hero-title { font-size: 1.5rem; line-height: 1.25; }
+    .hero-desc { font-size: 0.875rem; line-height: 1.6; }
+    .hero-actions { flex-direction: column; gap: 0.75rem; }
+    .hero-actions .btn { width: 100%; text-align: center; min-height: 48px; }
+    .hero-quote { margin: 1rem 0; font-size: 0.8125rem; }
+    .hero-visual { padding: 1rem; }
+    .hero-visual-input,
+    .hero-visual-output { margin: 0.5rem 0; padding: 0.75rem; font-size: 0.8125rem; }
+
+    /* ROI - Optimized */
+    .roi-metrics-bar { padding: 1.25rem 0; }
+    .roi-flex { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .roi-item { text-align: center; }
+    .roi-number { font-size: 1.125rem; }
+    .roi-label { font-size: 0.625rem; }
+    .roi-divider { height: 30px; }
+    .roi-metrics-bar .container { font-size: 0.65rem; line-height: 1.4; }
+
+    /* SECTIONS - Reduced padding */
+    .section-padding { padding: 1.5rem 0; }
+    .section-header { margin-bottom: 1.25rem; }
+    .section-header h2 { font-size: 1.5rem; }
+    .section-header p { font-size: 0.875rem; }
+
+    /* CARDS - Better touch targets */
+    .uniform-card { padding: 1rem; }
+    .uniform-card h3 { font-size: 1.125rem; }
+    .uniform-card p { font-size: 0.8125rem; }
+    .uniform-tag { font-size: 0.625rem; padding: 0.2rem 0.5rem; }
+    .agent-card { padding: 0.875rem; }
+    .agent-avatar { width: 40px; height: 40px; font-size: 0.875rem; }
+    .agent-card h3 { font-size: 1rem; }
+    .agent-skills li { font-size: 0.8125rem; }
+
+    /* PRICING TABS - Bigger targets */
+    .pricing-tabs { flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .tab-btn { width: 100%; text-align: center; padding: 0.875rem; min-height: 52px; font-size: 0.875rem; }
+
+    /* PRICING TABLE - Better mobile layout */
+    .enterprise-table { min-width: 100%; }
+    .enterprise-table th,
+    .enterprise-table td { padding: 0.625rem 0.5rem; font-size: 0.75rem; }
+    .plan-name { font-size: 0.875rem; }
+    .plan-price { font-size: 1.125rem; }
+    .plan-badge { font-size: 0.625rem; padding: 0.25rem 0.5rem; }
+    .compact-table th, .compact-table td { padding: 0.625rem 0.5rem; }
+
+    /* ENTERPRISE CARD */
+    .enterprise-card { padding: 1.25rem; gap: 1rem; }
+    .enterprise-info h3 { font-size: 1.125rem; }
+    .enterprise-info p { font-size: 0.8125rem; }
+    .enterprise-features { grid-template-columns: 1fr; gap: 0.5rem; }
+    .enterprise-features li { font-size: 0.8125rem; }
+    .enterprise-action { min-width: auto; padding: 1.25rem; }
+    .enterprise-price-label { font-size: 0.6875rem; }
+    .price-amount { font-size: 1.5rem; }
+    .enterprise-price-sublabel { font-size: 0.6875rem; margin-bottom: 1rem; }
+
+    /* CONTACT FORM - Better spacing */
+    .contact-wrapper { gap: 1.5rem; }
+    .contact-info h2 { font-size: 1.5rem; }
+    .contact-info p { font-size: 0.875rem; }
+    .contact-form-card { padding: 1.25rem; }
+    .form-row { flex-direction: column; gap: 0.5rem; }
+    .form-group { margin-bottom: 0.75rem; }
+    .form-group label { font-size: 0.75rem; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea { font-size: 16px; padding: 0.75rem 0.875rem; min-height: 48px; }
+    .privacy-notice { padding: 0.75rem; gap: 0.5rem; }
+    .privacy-notice-title { font-size: 0.6875rem; }
+    .privacy-notice-text { font-size: 0.6875rem; }
+    .btn-submit-wa { min-height: 52px; font-size: 1rem; }
+
+    /* FOOTER */
+    .footer-grid { grid-template-columns: 1fr; gap: 1.25rem; padding-bottom: 1rem; }
+    .footer-links { gap: 0.5rem; }
+    .footer-links a { font-size: 0.8125rem; }
+    .footer { padding: 1.5rem 0; }
+    .footer .container > div:last-child { flex-direction: column; gap: 0.5rem; text-align: center; }
+
+    /* SCROLL TO TOP */
+    .scroll-to-top {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 48px;
+        height: 48px;
+        background: var(--color-brand-blue);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+    .scroll-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .scroll-to-top:active {
+        background: var(--color-cta-hover);
+        transform: scale(0.95);
+    }
+    .scroll-to-top svg {
+        width: 24px;
+        height: 24px;
+    }
 }
