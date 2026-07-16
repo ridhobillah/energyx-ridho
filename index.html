@@ -420,28 +420,36 @@
                     </div>
 
                     <div class="add-ons-container">
-                        <h4 class="add-ons-title">Layanan Tambahan (Add-ons) Sesuai Kebutuhan</h4>
-                        <div class="table-responsive">
-                            <table class="enterprise-table compact-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-left"><strong>Kuota Token AI</strong></td>
-                                        <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 90.000</del> &nbsp;<strong>Rp 30.000</strong> / 1 Juta Token</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-left"><strong>Pelatihan Online</strong></td>
-                                        <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 1.800.000</del> &nbsp;<strong>Rp 600.000</strong> / Sesi @3 Jam</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-left"><strong>Konsultasi Online</strong></td>
-                                        <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 2.700.000</del> &nbsp;<strong>Rp 900.000</strong> / Jam</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-left"><strong>Konsultasi/Pelatihan Offline</strong></td>
-                                        <td><a href="#contact" class="btn btn-primary btn-full">Jadwalkan</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <button class="add-ons-toggle" aria-expanded="false" aria-controls="add-ons-content">
+                            <span>Lihat Layanan Tambahan (Add-ons)</span>
+                            <svg class="add-ons-arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="add-ons-content" id="add-ons-content" hidden>
+                            <p class="add-ons-note">Layanan tambahan ini dapat dipilih sesuai kebutuhan implementasi Anda.</p>
+                            <div class="table-responsive">
+                                <table class="enterprise-table compact-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-left"><strong>Kuota Token AI</strong></td>
+                                            <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 90.000</del> &nbsp;<strong>Rp 30.000</strong> / 1 Juta Token</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><strong>Pelatihan Online</strong></td>
+                                            <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 1.800.000</del> &nbsp;<strong>Rp 600.000</strong> / Sesi @3 Jam</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><strong>Konsultasi Online</strong></td>
+                                            <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 2.700.000</del> &nbsp;<strong>Rp 900.000</strong> / Jam</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><strong>Konsultasi/Pelatihan Offline</strong></td>
+                                            <td><a href="#contact" class="btn btn-primary btn-full">Jadwalkan</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -609,6 +617,21 @@
                 document.getElementById(this.dataset.target).classList.add('active');
             });
         });
+
+        // Add-ons Accordion
+        const addOnsToggle = document.querySelector('.add-ons-toggle');
+        const addOnsContent = document.getElementById('add-ons-content');
+        if (addOnsToggle && addOnsContent) {
+            addOnsToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                if (isExpanded) {
+                    addOnsContent.hidden = true;
+                } else {
+                    addOnsContent.hidden = false;
+                }
+            });
+        }
 
         // WhatsApp Form
         document.getElementById('waForm').addEventListener('submit', function(e) {

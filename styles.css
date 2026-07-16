@@ -169,7 +169,26 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 
 /* ADD-ONS CONTAINER */
 .add-ons-container { max-width: 800px; margin: 2rem auto 0 auto; }
-.add-ons-title { font-size: 1rem; margin-bottom: 0.75rem; color: var(--color-primary); text-align: left; }
+.add-ons-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.625rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-cta);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.add-ons-toggle:hover { background: var(--color-surface); border-color: var(--color-cta); }
+.add-ons-arrow { transition: transform 0.3s ease; flex-shrink: 0; }
+.add-ons-toggle[aria-expanded="true"] .add-ons-arrow { transform: rotate(180deg); }
+.add-ons-content { margin-top: 1rem; }
+.add-ons-note { font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 1rem; font-style: italic; }
 
 /* ENTERPRISE PRICE LABELS */
 .enterprise-price-label { font-size: 0.75rem; color: #9CA3AF; text-transform: uppercase; font-weight: 700; }
