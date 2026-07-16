@@ -176,7 +176,34 @@ h2 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 .enterprise-price-sublabel { font-size: 0.75rem; color: #9CA3AF; display: block; margin-bottom: 1.5rem; }
 
 /* YELLOW BUTTON */
-.btn-yellow { background: var(--color-brand-yellow); color: var(--color-primary); }
+.btn-yellow { background: var(--color-brand-yellow); color: var(--color-primary); font-weight: 800; box-shadow: 0 4px 14px rgba(242, 169, 0, 0.35); }
+.btn-yellow:hover { background: #E6A100; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(242, 169, 0, 0.45); }
+
+/* PRICING - BUSINESS TIER HIGHLIGHT */
+.plan-business { background: linear-gradient(180deg, rgba(40, 82, 150, 0.04) 0%, rgba(40, 82, 150, 0.02) 100%); border-top: 3px solid var(--color-brand-blue) !important; }
+.plan-business-row { background: rgba(40, 82, 150, 0.03); }
+.plan-badge-popular { background: var(--color-brand-yellow); color: var(--color-primary); padding: 0.35rem 0.85rem; font-size: 0.7rem; border-radius: 99px; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 8px rgba(242, 169, 0, 0.35); display: inline-block; animation: pulseGlow 2s ease-in-out infinite alternate; }
+@keyframes pulseGlow { from { box-shadow: 0 2px 8px rgba(242, 169, 0, 0.25); } to { box-shadow: 0 2px 16px rgba(242, 169, 0, 0.5); } }
+
+/* ROI ICONS */
+.roi-item { text-align: center; flex: 1; position: relative; }
+.roi-icon { display: block; font-size: 1.25rem; margin-bottom: 0.15rem; }
+.roi-number { display: block; font-family: var(--font-heading); font-size: 2.25rem; font-weight: 900; color: #FFF; margin-bottom: 0.25rem; line-height: 1; }
+
+/* ENTERPRISE CARD HIGHLIGHT */
+.enterprise-card-highlighted { background: var(--color-dark); border: 1px solid var(--color-dark-border); position: relative; overflow: hidden; }
+.enterprise-card-highlighted::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-brand-yellow), var(--color-brand-blue), var(--color-brand-yellow)); }
+.enterprise-action-highlighted { background: var(--color-dark-surface); border: 2px solid var(--color-brand-yellow); box-shadow: 0 0 30px rgba(242, 169, 0, 0.15); }
+.enterprise-action-cta { background: var(--color-brand-yellow); color: var(--color-primary); font-weight: 800; box-shadow: 0 4px 14px rgba(242, 169, 0, 0.35); }
+.enterprise-action-cta:hover { background: #E6A100; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(242, 169, 0, 0.45); }
+
+/* CASE STUDY SCANNABILITY */
+.case-highlight { font-size: 1.5rem; font-weight: 900; color: var(--color-brand-yellow); display: block; line-height: 1; margin: 0.25rem 0 0 0; }
+.case-highlight-label { font-size: 0.7rem; color: var(--color-text-muted); font-weight: 600; text-transform: uppercase; }
+.case-challenge { font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0.75rem; line-height: 1.5; }
+.case-challenge strong { color: var(--color-primary); }
+.case-solution { font-size: 0.8125rem; color: var(--color-text); line-height: 1.6; }
+.case-solution strong { color: var(--color-brand-blue); }
 
 /* HERO SECTION */
 .dark-section { background-color: var(--color-dark); color: #FFF; }
