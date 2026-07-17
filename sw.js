@@ -1,7 +1,7 @@
-const CACHE_NAME = 'energyx-cache-v6.4';
+const CACHE_NAME = 'energyx-cache-v7.0';
 const ASSETS_TO_CACHE = [
   '/',
-  'styles.css?v=6.4',
+  'styles.css?v=7.0',
   'assets/favicon.ico',
   'assets/EnrgyX-logo.png',
   'assets/logo.webp'
