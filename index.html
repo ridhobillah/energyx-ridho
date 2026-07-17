@@ -105,19 +105,10 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/EnrgyX-logo.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/EnrgyX-logo.png">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Lenis Smooth Scroll -->
-    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-
-    <!-- GSAP + ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <link rel="stylesheet" href="styles.css?v=7.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=6.4">
 </head>
 <body>
     <svg style="display: none;">
@@ -129,160 +120,103 @@
         </symbol>
     </svg>
 
-    <!-- Skip Link -->
-    <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
-
-    <!-- Navigation -->
-    <header class="nav" id="navbar">
-        <div class="nav__inner">
-            <a href="#hero" class="nav__logo">EnergyX <span>369</span></a>
-            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-                <span class="nav__toggle-bars" aria-hidden="true">
+    <header class="header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo" aria-label="Beranda EnergyX">
+                <span class="logo-text" style="color: var(--color-brand-blue);">EnergyX <span class="logo-sub" style="color: var(--color-brand-yellow);">369</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger" aria-hidden="true">
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
             </button>
-            <ul class="nav__links" id="navLinks">
-                <li><a href="#demo" class="nav__link">Demo Operasional</a></li>
-                <li><a href="#cases" class="nav__link">Use-case Nyata</a></li>
-                <li><a href="#ai-employee" class="nav__link">Keahlian Agen AI</a></li>
-                <li><a href="#pricing" class="nav__link">Investasi</a></li>
-                <li><a href="#contact" class="nav__link nav__cta">Jadwalkan Asesmen</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#demo">Demo Operasional</a></li>
+                <li><a href="#cases">Use-case Nyata</a></li>
+                <li><a href="#ai-employee">Keahlian Agen AI</a></li>
+                <li><a href="#pricing">Investasi</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-cta">Jadwalkan Asesmen</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
-    <main id="main-content">
-        <!-- ====== HERO SECTION ====== -->
-        <section class="hero section--hero" id="hero">
-            <div class="container hero__inner">
-                <div class="grid-asym">
-                    <div class="hero__content">
-                        <div class="hero__badge fade-in">
-                            <span class="hero__badge-dot" aria-hidden="true"></span>
-                            Enterprise AI Operating System
-                        </div>
-
-                        <h1 class="hero__title fade-in">
-                            Pekerjakan Karyawan AI pertama Anda dalam hitungan hari. <span class="highlight">Skalakan secara bertahap.</span>
-                        </h1>
-
-                        <p class="hero__description fade-in">
-                            EnergyX 369 mengintegrasikan mesin ERP dengan Agen AI yang dapat merampingkan tugas repetitif—mulai dari ekstraksi data <em>invoice</em> hingga penyusunan draf pelaporan—secara aman dan terpantau.
-                        </p>
-
-                        <blockquote class="hero__quote fade-in">
-                            "Setiap jam yang dihabiskan untuk pekerjaan administratif adalah jam yang tidak digunakan untuk menciptakan nilai bagi pelanggan."
-                        </blockquote>
-
-                        <div class="hero__actions fade-in">
-                            <a href="#demo" class="btn btn--primary btn--lg btn--magnetic" data-magnetic>
-                                Lihat Cara Kerja Sistem
-                            </a>
-                            <a href="#contact" class="btn btn--secondary btn--lg btn--magnetic" data-magnetic>
-                                Jadwalkan Asesmen
-                            </a>
-                        </div>
+    <main>
+        <section class="hero dark-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Pekerjakan Karyawan AI pertama Anda dalam hitungan hari. <span class="accent-highlight">Skalakan secara bertahap.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        EnergyX 369 mengintegrasikan mesin ERP dengan Agen AI yang dapat merampingkan tugas repetitif—mulai dari ekstraksi data <em>invoice</em> hingga penyusunan draf pelaporan—secara aman dan terpantau.
+                    </p>
+                    <div class="hero-quote">
+                        "Setiap jam yang dihabiskan untuk pekerjaan administratif adalah jam yang tidak digunakan untuk menciptakan nilai bagi pelanggan."
                     </div>
-
-                    <div class="hero__visual fade-in">
-                        <!-- Workflow Animation Nodes -->
-                        <div class="workflow-nodes" id="workflowNodes">
-                            <div class="workflow-node workflow-node--active" data-step="1">📥</div>
-                            <div class="workflow-line" data-line="1"><div class="workflow-line__fill"></div></div>
-                            <div class="workflow-node" data-step="2">🤖</div>
-                            <div class="workflow-line" data-line="2"><div class="workflow-line__fill"></div></div>
-                            <div class="workflow-node" data-step="3">🔍</div>
-                            <div class="workflow-line" data-line="3"><div class="workflow-line__fill"></div></div>
-                            <div class="workflow-node" data-step="4">✅</div>
-                        </div>
-
-                        <!-- Hero Visual Dashboard -->
-                        <div class="hero-visual-header">
-                            <span class="hero-visual-icon" aria-hidden="true">🤖</span>
-                            <span class="hero-visual-title"><strong>RANI</strong> (Finance AI Agent) sedang memproses...</span>
-                        </div>
-                        <div class="hero-visual-input">
-                            "Tolong bantu rekonsiliasi data mutasi bank hari ini dengan invoice masuk minggu lalu."
-                        </div>
-                        <div class="hero-visual-output">
-                            <strong>✅ Analisis selesai.</strong><br><br>
-                            ✅ 142 transaksi berhasil dicocokkan dengan data sistem.<br>
-                            ⚠️ Ditemukan 3 anomali perbedaan nominal. Draf catatan koreksi telah disiapkan untuk Anda tinjau.
-                        </div>
+                    <div class="hero-actions">
+                        <a href="#demo" class="btn btn-lg btn-yellow">Lihat Cara Kerja Sistem</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Jadwalkan Asesmen</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual hero-visual-bright">
+                    <div class="hero-visual-header">
+                        <span class="hero-visual-icon">🤖</span>
+                        <span class="hero-visual-title"><strong>RANI</strong> (Finance AI Agent) sedang memproses...</span>
+                    </div>
+                    <div class="hero-visual-input">
+                        "Tolong bantu rekonsiliasi data mutasi bank hari ini dengan invoice masuk minggu lalu."
+                    </div>
+                    <div class="hero-visual-output">
+                        <strong>✅ Analisis selesai.</strong><br><br>
+                        ✅ 142 transaksi berhasil dicocokkan dengan data sistem.<br>
+                        ⚠️ Ditemukan 3 anomali perbedaan nominal. Draf catatan koreksi telah disiapkan untuk Anda tinjau.
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== ROI METRICS BAR ====== -->
-        <div class="roi-bar">
-            <div class="container">
-                <div class="roi-bar__inner">
-                    <div class="roi-item fade-in">
-                        <span class="roi-item__icon" aria-hidden="true">📦</span>
-                        <span class="roi-item__number">25%</span>
-                        <span class="roi-item__label">Stok Mati Berkurang*</span>
-                    </div>
-                    <div class="roi-divider" aria-hidden="true"></div>
-                    <div class="roi-item fade-in">
-                        <span class="roi-item__icon" aria-hidden="true">📄</span>
-                        <span class="roi-item__number">10x</span>
-                        <span class="roi-item__label">Proses Invoice Lebih Cepat*</span>
-                    </div>
-                    <div class="roi-divider" aria-hidden="true"></div>
-                    <div class="roi-item fade-in">
-                        <span class="roi-item__icon" aria-hidden="true">📈</span>
-                        <span class="roi-item__number">+20%</span>
-                        <span class="roi-item__label">Prediksi Demand Lebih Akurat*</span>
-                    </div>
-                    <div class="roi-divider" aria-hidden="true"></div>
-                    <div class="roi-item fade-in">
-                        <span class="roi-item__icon" aria-hidden="true">⚡</span>
-                        <span class="roi-item__number">5x</span>
-                        <span class="roi-item__label">Approval Lebih Cepat*</span>
-                    </div>
+        <div class="roi-metrics-bar">
+            <div class="container roi-flex">
+                <div class="roi-item">
+                    <span class="roi-icon" aria-hidden="true">📦</span>
+                    <span class="roi-number">25%</span>
+                    <span class="roi-label">Stok Mati Berkurang*</span>
                 </div>
-                <div class="roi-bar__footer">
-                    *Berdasarkan data pelanggan kami dan riset McKinsey (2023), Gartner (2024), serta Salesforce Agentforce (2024). Angka aktual bisa berbeda tergantung kondisi bisnis masing-masing.
+                <div class="roi-divider"></div>
+                <div class="roi-item">
+                    <span class="roi-icon" aria-hidden="true">📄</span>
+                    <span class="roi-number">10x</span>
+                    <span class="roi-label">Proses Invoice Lebih Cepat*</span>
                 </div>
+                <div class="roi-divider"></div>
+                <div class="roi-item">
+                    <span class="roi-icon" aria-hidden="true">📈</span>
+                    <span class="roi-number">+20%</span>
+                    <span class="roi-label">Prediksi Demand Lebih Akurat*</span>
+                </div>
+                <div class="roi-divider"></div>
+                <div class="roi-item">
+                    <span class="roi-icon" aria-hidden="true">⚡</span>
+                    <span class="roi-number">5x</span>
+                    <span class="roi-label">Approval Lebih Cepat*</span>
+                </div>
+            </div>
+            <div class="container" style="text-align: center; margin-top: 1rem; opacity: 0.6; font-size: 0.7rem; color: #FFF;">
+                *Berdasarkan data pelanggan kami dan riset McKinsey (2023), Gartner (2024), serta Salesforce Agentforce (2024). Angka aktual bisa berbeda tergantung kondisi bisnis masing-masing.
             </div>
         </div>
 
-        <!-- ====== SOCIAL PROOF MARQUEE ====== -->
-        <section class="marquee-section" aria-label="Teknologi dan Stack">
-            <div class="marquee" id="techMarquee">
-                <!-- Set 1 -->
-                <div class="marquee-item"><div class="marquee-item__logo">ERP</div><span class="marquee-item__text">Enterprise ERP</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">AI/ML</div><span class="marquee-item__text">AI/ML Pipeline</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">OCR</div><span class="marquee-item__text">Intelligent OCR</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">NLP</div><span class="marquee-item__text">NLP Engine</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">CRM</div><span class="marquee-item__text">CRM Integration</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">SCM</div><span class="marquee-item__text">Supply Chain</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">HRMS</div><span class="marquee-item__text">HR Management</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">Cloud</div><span class="marquee-item__text">Cloud Native</span></div>
-                <!-- Duplicate for infinite loop -->
-                <div class="marquee-item"><div class="marquee-item__logo">ERP</div><span class="marquee-item__text">Enterprise ERP</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">AI/ML</div><span class="marquee-item__text">AI/ML Pipeline</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">OCR</div><span class="marquee-item__text">Intelligent OCR</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">NLP</div><span class="marquee-item__text">NLP Engine</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">CRM</div><span class="marquee-item__text">CRM Integration</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">SCM</div><span class="marquee-item__text">Supply Chain</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">HRMS</div><span class="marquee-item__text">HR Management</span></div>
-                <div class="marquee-item"><div class="marquee-item__logo">Cloud</div><span class="marquee-item__text">Cloud Native</span></div>
-            </div>
-        </section>
-
-        <!-- ====== DEMO SECTION ====== -->
-        <section class="section demo-section" id="demo">
+        <section class="section-padding section-bg" id="demo">
             <div class="container">
-                <div class="section-header section-header--center fade-in">
-                    <span class="section-header__eyebrow">DEMO OPERASIONAL</span>
-                    <h2 class="section-header__title">Lihat Platform Bekerja</h2>
-                    <p class="section-header__subtitle">Saksikan bagaimana Agen AI mengeksekusi instruksi alur kerja bisnis.</p>
+                <div class="section-header">
+                    <span class="section-eyebrow">DEMO OPERASIONAL</span>
+                    <h2>Lihat Platform Bekerja</h2>
+                    <p>Saksikan bagaimana Agen AI mengeksekusi instruksi alur kerja bisnis.</p>
                 </div>
-                <div class="demo-card fade-in">
+                <div class="demo-video-card">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/is93cRmo3DI" title="Demonstrasi AI EnergyX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -290,18 +224,17 @@
             </div>
         </section>
 
-        <!-- ====== CASE STUDIES ====== -->
-        <section class="section cases-section" id="cases">
+        <section class="section-padding section-surface" id="cases">
             <div class="container">
-                <div class="section-header section-header--center fade-in">
-                    <span class="section-header__eyebrow">USE-CASE DUNIA NYATA</span>
-                    <h2 class="section-header__title">Transformasi Lintas Departemen</h2>
-                    <p class="section-header__subtitle">Kami secara aktif mengotomatisasi proses bisnis yang membebani tim di berbagai sektor industri.</p>
+                <div class="section-header">
+                    <span class="section-eyebrow">USE-CASE DUNIA NYATA</span>
+                    <h2>Transformasi Lintas Departemen</h2>
+                    <p>Kami secara aktif mengotomatisasi proses bisnis yang membebani tim di berbagai sektor industri.</p>
                 </div>
 
-                <div class="cases-grid">
-                    <div class="case-card fade-in">
-                        <span class="case-tag case-tag--scm">SCM / RITEL F&B</span>
+                <div class="uniform-grid">
+                    <div class="uniform-card">
+                        <span class="uniform-tag tag-scm">SCM / RITEL F&B</span>
                         <h3>Efisiensi Arus Kas Ritel Makanan</h3>
                         <div class="case-highlight">-35%</div>
                         <div class="case-highlight-label">Pengurangan Food Waste</div>
@@ -309,8 +242,8 @@
                         <div class="case-solution">✅ AI analisis POS harian → menyusun otomatis draf Purchase Order. Arus kas aman, <strong>limbah bahan baku turun 35%</strong>.</div>
                     </div>
 
-                    <div class="case-card fade-in">
-                        <span class="case-tag case-tag--fin">FINANCE / HOLDING COMPANY</span>
+                    <div class="uniform-card">
+                        <span class="uniform-tag tag-fin">FINANCE / HOLDING COMPANY</span>
                         <h3>Konsolidasi Finansial Multi-Entitas</h3>
                         <div class="case-highlight">86%</div>
                         <div class="case-highlight-label">Lebih Cepat Tutup Buku</div>
@@ -318,8 +251,8 @@
                         <div class="case-solution">✅ Agen AI Finance merekonsiliasi transaksi masuk setiap malam. <strong>Tutup buku 2 hari kerja</strong>. Tanpa lembur tim akuntansi.</div>
                     </div>
 
-                    <div class="case-card fade-in">
-                        <span class="case-tag case-tag--crm">CRM / DISTRIBUTOR B2B</span>
+                    <div class="uniform-card">
+                        <span class="uniform-tag tag-crm">CRM / DISTRIBUTOR B2B</span>
                         <h3>Akselerasi Siklus Penjualan</h3>
                         <div class="case-highlight">3x</div>
                         <div class="case-highlight-label">Lebih Cepat Penawaran</div>
@@ -327,8 +260,8 @@
                         <div class="case-solution">✅ Agen CRM otomatis rantai approval + merakit Quotation dalam hitungan menit. <strong>Win rate meningkat signifikan</strong>.</div>
                     </div>
 
-                    <div class="case-card fade-in">
-                        <span class="case-tag case-tag--hr">HRMS / MANUFAKTUR</span>
+                    <div class="uniform-card">
+                        <span class="uniform-tag tag-hr">HRMS / MANUFAKTUR</span>
                         <h3>Tata Kelola Gaji Skala Besar</h3>
                         <div class="case-highlight">92%</div>
                         <div class="case-highlight-label">Lebih Cepat Payroll</div>
@@ -339,19 +272,18 @@
             </div>
         </section>
 
-        <!-- ====== AI AGENTS SECTION ====== -->
-        <section class="section agents-section" id="ai-employee">
+        <section class="section-padding section-surface section-bordered" id="ai-employee">
             <div class="container">
-                <div class="section-header section-header--center fade-in">
-                    <span class="section-header__eyebrow">KEAHLIAN AGEN AI</span>
-                    <h2 class="section-header__title">Katalog Keahlian Agen AI Siap Pakai</h2>
-                    <p class="section-header__subtitle">Sistem kami dapat difokuskan pada departemen tertentu yang paling membutuhkan otomatisasi, di atas fondasi data yang seragam.</p>
+                <div class="section-header">
+                    <span class="section-eyebrow">KEAHLIAN AGEN AI</span>
+                    <h2>Katalog Keahlian Agen AI Siap Pakai</h2>
+                    <p>Sistem kami dapat difokuskan pada departemen tertentu yang paling membutuhkan otomatisasi, di atas fondasi data yang seragam.</p>
                 </div>
 
-                <div class="agents-grid">
-                    <div class="agent-card fade-in">
+                <div class="ai-agents-grid">
+                    <div class="agent-card">
                         <div class="agent-header">
-                            <div class="agent-avatar agent-avatar--fin">Fin</div>
+                            <div class="agent-avatar fin-avatar">Fin</div>
                             <h3>Financial Control</h3>
                         </div>
                         <ul class="agent-skills">
@@ -361,9 +293,9 @@
                         </ul>
                     </div>
 
-                    <div class="agent-card fade-in">
+                    <div class="agent-card">
                         <div class="agent-header">
-                            <div class="agent-avatar agent-avatar--scm">Logi</div>
+                            <div class="agent-avatar scm-avatar">Logi</div>
                             <h3>Supply Chain</h3>
                         </div>
                         <ul class="agent-skills">
@@ -373,9 +305,9 @@
                         </ul>
                     </div>
 
-                    <div class="agent-card fade-in">
+                    <div class="agent-card">
                         <div class="agent-header">
-                            <div class="agent-avatar agent-avatar--rev" style="background: var(--brand-red);">Rev</div>
+                            <div class="agent-avatar rev-avatar" style="background: var(--color-brand-red);">Rev</div>
                             <h3>Sales & CRM</h3>
                         </div>
                         <ul class="agent-skills">
@@ -385,9 +317,9 @@
                         </ul>
                     </div>
 
-                    <div class="agent-card fade-in">
+                    <div class="agent-card">
                         <div class="agent-header">
-                            <div class="agent-avatar agent-avatar--hr">Tal</div>
+                            <div class="agent-avatar hr-avatar">Tal</div>
                             <h3>Human Capital</h3>
                         </div>
                         <ul class="agent-skills">
@@ -400,24 +332,22 @@
             </div>
         </section>
 
-        <!-- ====== PRICING SECTION ====== -->
-        <section class="section pricing-section" id="pricing">
+        <section class="section-padding section-bg" id="pricing">
             <div class="container">
-                <div class="section-header section-header--center fade-in">
-                    <span class="section-header__eyebrow">INVESTASI</span>
-                    <h2 class="section-header__title">Skema Harga yang Transparan</h2>
-                    <p class="section-header__subtitle">Tanpa biaya lisensi per pengguna dan tanpa biaya terselubung lainnya.</p>
+                <div class="section-header">
+                    <span class="section-eyebrow">INVESTASI</span>
+                    <h2>Skema Harga  yang Transparan</h2>
+                    <p>Tanpa biaya lisensi per pengguna dan tanpa biaya terselubung lainnya.</p>
                 </div>
 
-                <div class="pricing-tabs fade-in">
+                <div class="pricing-tabs">
                     <button class="tab-btn active" data-target="tab-sme">Layanan Cloud Terkelola (SaaS)</button>
                     <button class="tab-btn" data-target="tab-large">Lisensi Permanen (Enterprise)</button>
                     <button class="tab-btn" data-target="tab-addons">Layanan Tambahan (Add-ons)</button>
                 </div>
 
-                <!-- TAB: SaaS Pricing -->
                 <div class="tab-content active" id="tab-sme">
-                    <div class="table-responsive fade-in">
+                    <div class="table-responsive">
                         <table class="enterprise-table">
                             <thead>
                                 <tr>
@@ -426,26 +356,26 @@
                                         <div class="plan-spacer"></div>
                                         <div class="plan-name">Starter</div>
                                         <div class="plan-price">Rp 3 Jt<span class="period">/bulan</span></div>
-                                        <div class="plan-billed">Promo: <del style="color: var(--brand-red);">Rp 36 Jt</del> &nbsp;<strong>Rp 30 Jt</strong>/tahun</div>
+                                        <div class="plan-billed">Promo: <del style="color: var(--color-brand-red);">Rp 36 Jt</del> &nbsp;<strong>Rp 30 Jt</strong>/tahun</div>
                                     </th>
                                     <th scope="col">
                                         <div class="plan-spacer"></div>
                                         <div class="plan-name">Business</div>
                                         <div class="plan-price">Rp 6 Jt<span class="period">/bulan</span></div>
-                                        <div class="plan-billed">Promo: <del style="color: var(--brand-red);">Rp 72 Jt</del> &nbsp;<strong>Rp 60 Jt</strong>/tahun</div>
+                                        <div class="plan-billed">Promo: <del style="color: var(--color-brand-red);">Rp 72 Jt</del> &nbsp;<strong>Rp 60 Jt</strong>/tahun</div>
                                     </th>
                                     <th class="highlight-col plan-business" scope="col">
-                                        <div class="plan-badge plan-badge--popular">⭐ Paling Ideal</div>
+                                        <div class="plan-badge plan-badge-popular">⭐ Paling Ideal</div>
                                         <div class="plan-spacer"></div>
                                         <div class="plan-name">Business</div>
                                         <div class="plan-price">Rp 6 Jt<span class="period">/bulan</span></div>
-                                        <div class="plan-billed">Promo: <del style="color: var(--brand-red);">Rp 72 Jt</del> &nbsp;<strong>Rp 60 Jt</strong>/tahun</div>
+                                        <div class="plan-billed">Promo: <del style="color: var(--color-brand-red);">Rp 72 Jt</del> &nbsp;<strong>Rp 60 Jt</strong>/tahun</div>
                                     </th>
                                     <th scope="col">
                                         <div class="plan-spacer"></div>
                                         <div class="plan-name">Corporate</div>
                                         <div class="plan-price">Rp 9 Jt<span class="period">/bulan</span></div>
-                                        <div class="plan-billed">Promo: <del style="color: var(--brand-red);">Rp 108 Jt</del> &nbsp;<strong>Rp 90 Jt</strong>/tahun</div>
+                                        <div class="plan-billed">Promo: <del style="color: var(--color-brand-red);">Rp 108 Jt</del> &nbsp;<strong>Rp 90 Jt</strong>/tahun</div>
                                     </th>
                                 </tr>
                             </thead>
@@ -454,52 +384,51 @@
                                     <td class="text-left"><strong>Core Platform (ERP/CRM/SCM/HRMS)</strong><span class="tooltip-trigger" aria-label="Platform inti yang mencakup modul ERP, CRM, Supply Chain, dan HRMS">?</span></td>
                                     <td><strong>1 Pilihan Core Platform</strong></td>
                                     <td><strong>2 Pilihan Core Platform</strong></td>
-                                    <td class="highlight-col plan-business-row"><strong>Seluruh Core Platform</strong></td>
+                                    <td class="highlight-col plan-corporate-row"><strong>Seluruh Core Platform</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="text-left"><strong>Keahlian AI Agen</strong></td>
                                     <td><strong>3 Keahlian Agen AI</strong></td>
                                     <td><strong>6 Keahlian AI</strong></td>
-                                    <td class="highlight-col plan-business-row"><strong>9 Keahlian Agen AI</strong></td>
+                                    <td class="highlight-col plan-corporate-row"><strong>9 Keahlian Agen AI</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="text-left"><strong>Kuota Token AI</strong><span class="tooltip-trigger" aria-label="Satu token AI setara dengan satu panggilan ke model AI. 3 Juta token memproses sekitar 5.000 halaman invoice per bulan">?</span></td>
                                     <td><strong>3 Juta Token / bln</strong></td>
                                     <td><strong>6 Juta Token / bln</strong></td>
-                                    <td class="highlight-col plan-business-row"><strong>9 Juta Token / bln</strong></td>
+                                    <td class="highlight-col plan-corporate-row"><strong>9 Juta Token / bln</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="text-left"><strong>Pelatihan Online</strong></td>
                                     <td><strong>1 Sesi @3 Jam</strong></td>
                                     <td><strong>2 Sesi @3 Jam</strong></td>
-                                    <td class="highlight-col plan-business-row"><strong>3 Sesi @3 Jam</strong></td>
+                                    <td class="highlight-col plan-corporate-row"><strong>3 Sesi @3 Jam</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="text-left"><strong>Konsultasi Online</strong></td>
                                     <td><strong>3 Jam</strong></td>
                                     <td><strong>6 Jam</strong></td>
-                                    <td class="highlight-col plan-business-row"><strong>9 Jam</strong></td>
+                                    <td class="highlight-col plan-corporate-row"><strong>9 Jam</strong></td>
                                 </tr>
                                 <tr>
                                     <td class="text-left"><strong>Dukungan Teknis (SLA)</strong></td>
                                     <td><strong>Standar Dukungan Jam Kerja</strong></td>
                                     <td><strong>Standar Dukungan Jam Kerja</strong></td>
-                                    <td class="highlight-col plan-business-row"><strong>Respons Insiden Kritis &lt; 3 Jam</strong></td>
+                                    <td class="highlight-col plan-corporate-row"><strong>Respons Insiden Kritis &lt; 3 Jam</strong></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td><a href="#contact" class="btn btn--secondary btn--full">Pilih Starter</a></td>
-                                    <td><a href="#contact" class="btn btn--secondary btn--full">Pilih Business</a></td>
-                                    <td class="highlight-col plan-business-row"><a href="#contact" class="btn btn--primary btn--full">Pilih Business ⭐</a></td>
+                                    <td><a href="#contact" class="btn btn-outline-light btn-full">Pilih Starter</a></td>
+                                    <td><a href="#contact" class="btn btn-outline-light btn-full">Pilih Business</a></td>
+                                    <td class="highlight-col plan-corporate-row"><a href="#contact" class="btn btn-primary btn-full btn-yellow plan-corporate-cta">Pilih Corporate 🏢</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <!-- TAB: Add-ons -->
                 <div class="tab-content" id="tab-addons">
-                    <div class="add-ons-wrapper fade-in">
+                    <div class="add-ons-wrapper">
                         <h4 class="add-ons-wrapper-title">Layanan Tambahan (Add-ons)</h4>
                         <p class="add-ons-wrapper-note">Pilih layanan tambahan sesuai kebutuhan implementasi Anda.</p>
                         <div class="table-responsive">
@@ -507,19 +436,19 @@
                                 <tbody>
                                     <tr>
                                         <td class="text-left"><strong>Kuota Token AI</strong></td>
-                                        <td class="text-left">Promo: <del style="color: var(--brand-red);">Rp 90.000</del> &nbsp;<strong>Rp 30.000</strong> / 1 Juta Token</td>
+                                        <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 90.000</del> &nbsp;<strong>Rp 30.000</strong> / 1 Juta Token</td>
                                     </tr>
                                     <tr>
                                         <td class="text-left"><strong>Pelatihan Online</strong></td>
-                                        <td class="text-left">Promo: <del style="color: var(--brand-red);">Rp 1.800.000</del> &nbsp;<strong>Rp 600.000</strong> / Sesi @3 Jam</td>
+                                        <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 1.800.000</del> &nbsp;<strong>Rp 600.000</strong> / Sesi @3 Jam</td>
                                     </tr>
                                     <tr>
                                         <td class="text-left"><strong>Konsultasi Online</strong></td>
-                                        <td class="text-left">Promo: <del style="color: var(--brand-red);">Rp 2.700.000</del> &nbsp;<strong>Rp 900.000</strong> / Jam</td>
+                                        <td class="text-left">Promo: <del style="color: var(--color-brand-red);">Rp 2.700.000</del> &nbsp;<strong>Rp 900.000</strong> / Jam</td>
                                     </tr>
                                     <tr>
                                         <td class="text-left"><strong>Konsultasi/Pelatihan Offline</strong></td>
-                                        <td><a href="#contact" class="btn btn--primary btn--full">Jadwalkan</a></td>
+                                        <td><a href="#contact" class="btn btn-primary btn-full">Jadwalkan</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -527,11 +456,10 @@
                     </div>
                 </div>
 
-                <!-- TAB: Enterprise -->
                 <div class="tab-content" id="tab-large">
-                    <div class="enterprise-card enterprise-card--highlighted fade-in">
+                    <div class="enterprise-card enterprise-card-highlighted">
                         <div class="enterprise-info">
-                            <span class="section-header__eyebrow section-header__eyebrow--yellow">LISENSI PERMANEN (CAPEX)</span>
+                            <span class="section-eyebrow eyebrow-yellow">LISENSI PERMANEN (CAPEX)</span>
                             <h3>Enterprise Custom Architecture</h3>
                             <p>Hak kepemilikan atas arsitektur sistem pada pusat data internal (<em>On-Premise</em>) perusahaan Anda sendiri dengan isolasi data tingkat tinggi.</p>
                             <ul class="enterprise-features">
@@ -541,114 +469,108 @@
                                 <li><svg width="16" height="16"><use href="#icon-check"></use></svg> Pelatihan LLM Mandiri dengan Data Internal</li>
                             </ul>
                         </div>
-                        <div class="enterprise-action enterprise-action--highlighted">
+                        <div class="enterprise-action enterprise-action-highlighted">
                             <span class="enterprise-price-label">Biaya Proyek Mulai Dari</span>
                             <span class="price-amount">Rp 369 Juta</span>
                             <span class="enterprise-price-sublabel">Biaya Implementasi Sekali Bayar (OTC)<br>+ Opsional 20% Annual Maintenance</span>
-                            <a href="#contact" class="btn btn--primary btn--full btn--yellow enterprise-action-cta">Konsultasikan Arsitektur</a>
+                            <a href="#contact" class="btn btn-primary btn-full btn-yellow enterprise-action-cta">Konsultasikan Arsitektur</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== CONTACT SECTION ====== -->
-        <section class="section contact-section" id="contact">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="contact-info fade-in">
-                        <span class="section-header__eyebrow">TAHAP SELANJUTNYA</span>
-                        <h2 class="section-header__title">Lakukan Asesmen Kesiapan AI Bersama Kami</h2>
-                        <p>Apakah alur kerja di perusahaan Anda sudah siap untuk diotomatisasi? Diskusikan tantangan proses bisnis Anda dengan arsitek solusi kami dalam sesi konsultasi awal yang bebas komitmen.</p>
-                    </div>
-
-                    <div class="contact-form-card fade-in">
-                        <form id="waForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="fullName">Nama Lengkap</label>
-                                    <input type="text" id="fullName" required placeholder="Cth: Budi Santoso">
-                                </div>
-                                <div class="form-group">
-                                    <label for="workEmail">Email Perusahaan</label>
-                                    <input type="email" id="workEmail" required placeholder="budi@perusahaan.co.id">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="jobRole">Posisi / Jabatan</label>
-                                    <input type="text" id="jobRole" required placeholder="Cth: Direktur Operasional">
-                                </div>
-                                <div class="form-group">
-                                    <label for="selectedPlan">Fase Implementasi</label>
-                                    <select id="selectedPlan" required>
-                                        <option value="" disabled selected>Pilih Salah Satu</option>
-                                        <option value="SaaS - Starter/Business">Pilot Skala Kecil (SaaS - Starter/Business)</option>
-                                        <option value="SaaS - Corporate">Implementasi Penuh (SaaS - Corporate)</option>
-                                        <option value="On-Premise - Enterprise">Kustom Terisolasi (On-Premise - Enterprise)</option>
-                                        <option value="Konsultasi">Konsultasi (Online/Offline)</option>
-                                        <option value="Pelatihan">Pelatihan (Online/Offline)</option>
-                                        <option value="Asesmen">Asesmen GRATIS (Online)</option>
-                                    </select>
-                                </div>
+        <section class="section-padding" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-eyebrow">TAHAP SELANJUTNYA</span>
+                    <h2>Lakukan Asesmen Kesiapan AI Bersama Kami</h2>
+                    <p>Apakah alur kerja di perusahaan Anda sudah siap untuk diotomatisasi? Diskusikan tantangan proses bisnis Anda dengan arsitek solusi kami dalam sesi konsultasi awal yang bebas komitmen.</p>
+                </div>
+                
+                <div class="contact-form-card">
+                    <form id="waForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Nama Lengkap</label>
+                                <input type="text" id="fullName" required placeholder="Cth: Budi Santoso">
                             </div>
                             <div class="form-group">
-                                <label for="bottleneck">Tantangan Operasional Terbesar Anda?</label>
-                                <select id="bottleneck" required>
+                                <label for="workEmail">Email Perusahaan</label>
+                                <input type="email" id="workEmail" required placeholder="budi@perusahaan.co.id">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="jobRole">Posisi / Jabatan</label>
+                                <input type="text" id="jobRole" required placeholder="Cth: Direktur Operasional">
+                            </div>
+                            <div class="form-group">
+                                <label for="selectedPlan">Fase Implementasi</label>
+                                <select id="selectedPlan" required>
                                     <option value="" disabled selected>Pilih Salah Satu</option>
-                                    <option value="Input Data Manual">Input Data Manual & Banyak Error</option>
-                                    <option value="Proses Approval Lambat">Proses Approval Lambat</option>
-                                    <option value="Biaya Operasional Tinggi">Biaya Operasional Tinggi</option>
-                                    <option value="Data Tidak Terintegrasi">Data Tidak Terintegrasi</option>
-                                    <option value="Prediksi Demand Salah">Prediksi Demand Sering Salah</option>
-                                    <option value="Laporan Keuangan Lambat">Laporan Keuangan Butuh Waktu Lama</option>
-                                    <option value="Lainnya">Lainnya (tuliskan di pesan)</option>
+                                    <option value="SaaS - Starter/Business">Pilot Skala Kecil (SaaS - Starter/Business)</option>
+                                    <option value="SaaS - Corporate">Implementasi Penuh (SaaS - Corporate)</option>
+                                    <option value="On-Premise - Enterprise">Kustom Terisolasi (On-Premise - Enterprise)</option>
+                                    <option value="Konsultasi">Konsultasi (Online/Offline)</option>
+                                    <option value="Pelatihan">Pelatihan (Online/Offline)</option>
+                                    <option value="Asesmen">Asesmen GRATIS (Online)</option>                                    
                                 </select>
                             </div>
-
-                            <div class="privacy-notice">
-                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                                <div>
-                                    <span class="privacy-notice-title">Kepatuhan Privasi Data</span>
-                                    <p class="privacy-notice-text">
-                                        Kami berkomitmen penuh menjaga kerahasiaan data perusahaan Anda. Informasi yang dikirimkan dienkripsi dan murni digunakan oleh <em>Solution Architect</em> kami untuk keperluan kalkulasi asesmen arsitektur tanpa dibagikan ke pihak ketiga.
-                                    </p>
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bottleneck">Tantangan Operasional Terbesar Anda?</label>
+                            <select id="bottleneck" required>
+                                <option value="" disabled selected>Pilih Salah Satu</option>
+                                <option value="Input Data Manual">Input Data Manual & Banyak Error</option>
+                                <option value="Proses Approval Lambat">Proses Approval Lambat</option>
+                                <option value="Biaya Operasional Tinggi">Biaya Operasional Tinggi</option>
+                                <option value="Data Tidak Terintegrasi">Data Tidak Terintegrasi</option>
+                                <option value="Prediksi Demand Salah">Prediksi Demand Sering Salah</option>
+                                <option value="Laporan Keuangan Lambat">Laporan Keuangan Butuh Waktu Lama</option>
+                                <option value="Lainnya">Lainnya (tuliskan di pesan)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="privacy-notice">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <div>
+                                <span class="privacy-notice-title">Kepatuhan Privasi Data</span>
+                                <p class="privacy-notice-text">
+                                    Kami berkomitmen penuh menjaga kerahasiaan data perusahaan Anda. Informasi yang dikirimkan dienkripsi dan murni digunakan oleh <em>Solution Architect</em> kami untuk keperluan kalkulasi asesmen arsitektur tanpa dibagikan ke pihak ketiga.
+                                </p>
                             </div>
+                        </div>
 
-                            <button type="submit" class="btn btn--primary btn--full btn--lg btn--magnetic" data-magnetic>
-                                Jadwalkan via WA
-                            </button>
-                        </form>
-                    </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">Jadwalkan via WA</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ====== FOOTER ====== -->
-    <footer class="footer">
+    <footer class="footer dark-section">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <span class="footer__logo">EnergyX <span>369</span></span>
-                    <p class="footer__description">
+                    <span class="logo-text" style="color: var(--color-brand-blue); font-size: 1.25rem;">EnergyX <span style="color: var(--color-brand-yellow);">369</span></span>
+                    <p style="margin-top: 1rem; color: #9CA3AF; font-size: 0.875rem; line-height: 1.6;">
                         Membantu transformasi digital perusahaan kelas Kecil, Menengah dan Enterprise melalui fondasi sistem berbasis AI dan orkestrasi <em>workflow</em> cerdas.
                     </p>
                 </div>
-
+                
                 <div>
-                    <h4 class="footer__heading">Informasi Edukasi</h4>
+                    <h4 style="color: #FFF; margin-bottom: 1rem; font-size: 0.875rem;">Informasi Edukasi</h4>
                     <ul class="footer-links">
-                        <li><a href="https://energyx.co.id/event/8" target="_blank" class="footer__link-highlight">Executive AI Bootcamp &nearr;</a></li>
+                        <li><a href="https://energyx.co.id/event/8" target="_blank" style="color: var(--color-brand-yellow); font-weight: 600;">Executive AI Bootcamp &nearr;</a></li>
                         <li><a href="https://www.youtube.com/watch?v=is93cRmo3DI" target="_blank">Webinar Demonstrasi AI</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="footer__heading">PT. EnergyX 369 Indonesia</h4>
+                    <h4 style="color: #FFF; margin-bottom: 1rem; font-size: 0.875rem;">PT. EnergyX 369 Indonesia</h4>
                     <ul class="footer-links">
                         <li><a href="mailto:info@energyx.co.id">info@energyx.co.id</a></li>
                         <li><a href="https://wa.me/6285285586496" target="_blank">+62 852-8558-6496 (WA)</a></li>
@@ -656,55 +578,23 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2026 PT. EnergyX 369 Indonesia. All rights reserved.</p>
-                <div class="footer__build">Built on EnergyX Agentic AI Platform</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <p style="color: #6B7280; font-size: 0.75rem; margin: 0;">&copy; 2026 PT. EnergyX 369 Indonesia. All rights reserved.</p>
+                <div style="color: #6B7280; font-size: 0.75rem;">Built on EnergyX Agentic AI Platform</div>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Kembali ke atas">
-        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-    </button>
-
-    <!-- ====== JAVASCRIPT ====== -->
     <script>
-        // ===== LENIS SMOOTH SCROLL =====
-        const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            direction: 'vertical',
-            smooth: true,
-            smoothTouch: false,
-            touchMultiplier: 2,
-        });
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
-        // Sync Lenis with GSAP ScrollTrigger
-        lenis.on('scroll', ScrollTrigger.update);
-        gsap.ticker.add((time) => lenis.raf(time * 1000));
-        gsap.ticker.lagSmoothing(0);
-
-        // ===== NAVIGATION =====
+        // Mobile Navigation
         const navToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
-        const navbar = document.getElementById('navbar');
-
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             const isExpanded = navLinks.classList.contains('active');
             navToggle.setAttribute('aria-expanded', isExpanded);
             navToggle.classList.toggle('active');
         });
-
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -713,23 +603,14 @@
             });
         });
 
-        // Navbar scroll effect
-        lenis.on('scroll', ({ scroll }) => {
-            if (scroll > 50) {
-                navbar.classList.add('nav--scrolled');
-            } else {
-                navbar.classList.remove('nav--scrolled');
-            }
-        });
-
-        // ===== PWA REGISTRATION =====
+        // PWA Registration
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js')
                 .then(() => console.log('SW registered'))
                 .catch(() => console.log('SW registration failed'));
         }
 
-        // ===== TAB SWITCHING =====
+        // Tab Switching
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -739,7 +620,22 @@
             });
         });
 
-        // ===== WHATSAPP FORM =====
+        // Add-ons Accordion
+        const addOnsToggle = document.querySelector('.add-ons-toggle');
+        const addOnsContent = document.getElementById('add-ons-content');
+        if (addOnsToggle && addOnsContent) {
+            addOnsToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                if (isExpanded) {
+                    addOnsContent.hidden = true;
+                } else {
+                    addOnsContent.hidden = false;
+                }
+            });
+        }
+
+        // WhatsApp Form
         document.getElementById('waForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const fullName = document.getElementById('fullName').value.trim();
@@ -755,200 +651,22 @@
             window.open(waURL, '_blank');
         });
 
-        // ===== MAGNETIC BUTTONS =====
-        document.querySelectorAll('[data-magnetic]').forEach(btn => {
-            btn.addEventListener('mousemove', (e) => {
-                const rect = btn.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                gsap.to(btn, {
-                    x: x * 0.3,
-                    y: y * 0.3,
-                    duration: 0.4,
-                    ease: 'power2.out',
-                });
-            });
-
-            btn.addEventListener('mouseleave', () => {
-                gsap.to(btn, {
-                    x: 0,
-                    y: 0,
-                    duration: 0.6,
-                    ease: 'elastic.out(1, 0.5)',
-                });
-            });
-        });
-
-        // ===== SCROLL TO TOP =====
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-        lenis.on('scroll', ({ scroll }) => {
-            if (scroll > 600) {
-                scrollToTopBtn.classList.add('visible');
-            } else {
-                scrollToTopBtn.classList.remove('visible');
-            }
-        });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            lenis.scrollTo(0, { duration: 1.5, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-        });
-
-        // ===== GSAP ANIMATIONS =====
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Fade-in on scroll
-        gsap.utils.toArray('.fade-in').forEach((el, i) => {
-            gsap.fromTo(el,
-                { opacity: 0, y: 30 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.8,
-                    ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: el,
-                        start: 'top 85%',
-                        toggleActions: 'play none none none',
-                    },
-                    delay: i % 4 * 0.1,
-                }
-            );
-        });
-
-        // ===== WORKFLOW NODE ANIMATION (Scroll-linked) =====
-        const workflowNodes = document.getElementById('workflowNodes');
-        if (workflowNodes) {
-            const nodes = workflowNodes.querySelectorAll('.workflow-node');
-            const lines = workflowNodes.querySelectorAll('.workflow-line');
-
-            // Animate nodes filling on scroll
-            let nodeTimeline = gsap.timeline({
-                scrollTrigger: {
-                    trigger: workflowNodes,
-                    start: 'top 80%',
-                    end: 'top 20%',
-                    scrub: 1.5,
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
             });
-
-            nodeTimeline
-                .to(nodes[0], { scale: 1.1, boxShadow: '0 0 25px rgba(37, 99, 235, 0.6)', duration: 0.5 })
-                .to(lines[0].querySelector('.workflow-line__fill'), {
-                    x: '100%',
-                    duration: 0.4,
-                    ease: 'power1.inOut',
-                }, '-=0.2')
-                .to(nodes[1], {
-                    scale: 1.1,
-                    boxShadow: '0 0 25px rgba(37, 99, 235, 0.6)',
-                    duration: 0.5,
-                })
-                .to(lines[1].querySelector('.workflow-line__fill'), {
-                    x: '100%',
-                    duration: 0.4,
-                    ease: 'power1.inOut',
-                }, '-=0.2')
-                .to(nodes[2], {
-                    scale: 1.1,
-                    boxShadow: '0 0 25px rgba(37, 99, 235, 0.6)',
-                    duration: 0.5,
-                })
-                .to(lines[2].querySelector('.workflow-line__fill'), {
-                    x: '100%',
-                    duration: 0.4,
-                    ease: 'power1.inOut',
-                }, '-=0.2')
-                .to(nodes[3], {
-                    scale: 1.15,
-                    boxShadow: '0 0 30px rgba(16, 185, 129, 0.7)',
-                    duration: 0.5,
-                });
-
-            // Continuous ambient animation for the rotating background glow
-            gsap.to(workflowNodes, {
-                rotation: 360,
-                duration: 60,
-                repeat: -1,
-                ease: 'none',
-            });
-        }
-
-        // ===== HERO PARALLAX =====
-        gsap.fromTo('.hero__visual',
-            { y: 60, opacity: 0 },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 1.2,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: '.hero',
-                    start: 'top 80%',
-                    end: 'top 40%',
-                    scrub: 1,
-                }
-            }
-        );
-
-        // ===== ROI COUNTER ANIMATION =====
-        document.querySelectorAll('.roi-item__number').forEach(el => {
-            const text = el.textContent;
-            const num = parseInt(text.replace(/[^0-9]/g, ''), 10);
-            const prefix = text.startsWith('+') ? '+' : '';
-            const suffix = text.replace(/[\d+\-]/g, '');
-
-            ScrollTrigger.create({
-                trigger: el,
-                start: 'top 85%',
-                onEnter: () => {
-                    gsap.fromTo(el,
-                        { textContent: '0' },
-                        {
-                            textContent: num,
-                            duration: 1.5,
-                            ease: 'power2.out',
-                            snap: { textContent: 1 },
-                            onUpdate: function() {
-                                el.textContent = prefix + Math.round(parseFloat(el.textContent)) + suffix;
-                            },
-                        }
-                    );
-                },
-                once: true,
-            });
         });
-
-        // ===== CASE CARD STAGGER =====
-        gsap.fromTo('.case-card',
-            { opacity: 0, y: 40 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.7,
-                stagger: 0.15,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.cases-grid',
-                    start: 'top 80%',
-                }
-            }
-        );
-
-        // ===== AGENT CARDS STAGGER =====
-        gsap.fromTo('.agent-card',
-            { opacity: 0, y: 30 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.6,
-                stagger: 0.12,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.agents-grid',
-                    start: 'top 80%',
-                }
-            }
-        );
     </script>
 </body>
 </html>
