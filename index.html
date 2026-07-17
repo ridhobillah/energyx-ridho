@@ -682,7 +682,13 @@
             touchMultiplier: 2,
         });
 
-        // Sync Lenis with GSAP ScrollTrigger — single RAF source avoids double-invoke
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+        // Sync Lenis with GSAP ScrollTrigger
         lenis.on('scroll', ScrollTrigger.update);
         gsap.ticker.add((time) => lenis.raf(time * 1000));
         gsap.ticker.lagSmoothing(0);
